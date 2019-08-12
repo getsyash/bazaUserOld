@@ -1,15 +1,9 @@
 {
-  "name": "ionFullApp",
-  "integrations": {},
-  "type": "ionic1",
-  "gulpStartupTasks": [
-    "sass",
-    "watch"
-  ],
-  "watchPatterns": [
-    "www/**/*",
-    "!www/lib/**/*",
-    "scss/**/*"
-  ],
-  "documentRoot": "www"
+  "name": "ionic3-start-theme",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "a93c3345",
+  "id": "a93c3345"
 }
