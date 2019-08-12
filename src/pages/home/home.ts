@@ -6,6 +6,7 @@ import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
+import {RequestsProvider} from "../../providers/requests/requests";
 
 
 @Component({
@@ -20,7 +21,7 @@ export class HomePage {
     date: new Date().toISOString()
   }
 
-  constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController) {
+  constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController, public RequestProvider: RequestsProvider) {
   }
 
   ionViewWillEnter() {

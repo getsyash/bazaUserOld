@@ -24,6 +24,9 @@ import {SearchLocationPage} from "../pages/search-location/search-location";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
+import { RequestsProvider } from '../providers/requests/requests';
+import { CategoriesPage } from '../pages/categories/categories';
+import { UsersPage } from '../pages/users/users';
 
 // import services
 // end import services
@@ -44,7 +47,9 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
-    TripsPage
+    TripsPage,
+    CategoriesPage,
+    UsersPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +76,9 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
-    TripsPage
+    TripsPage,
+    CategoriesPage,
+    UsersPage
   ],
   providers: [
     StatusBar,
@@ -80,9 +87,13 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
     ActivityService,
     TripService,
     WeatherProvider,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    RequestsProvider
   ]
 })
 
 export class AppModule {
+
+  
 }
+  

@@ -1,0 +1,12 @@
+page-users {
+    ion-avatar {
+        width: 25%;
+        float: left;
+        display: inline-block;
+    }.ListItem ion-label {
+        width: 70%;
+        display: inline-block;
+        float: left;
+        padding-left: 5%;
+    }
+}
