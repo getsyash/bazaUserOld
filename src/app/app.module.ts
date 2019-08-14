@@ -27,6 +27,7 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import { RequestsProvider } from '../providers/requests/requests';
 import { CategoriesPage } from '../pages/categories/categories';
 import { UsersPage } from '../pages/users/users';
+import { AuthProvider } from '../providers/auth/auth';
 
 // import services
 // end import services
@@ -88,7 +89,8 @@ import { UsersPage } from '../pages/users/users';
     TripService,
     WeatherProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    RequestsProvider
+    RequestsProvider,
+    AuthProvider
   ]
 })
 

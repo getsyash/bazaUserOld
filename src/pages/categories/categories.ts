@@ -16,6 +16,8 @@ import {RequestsProvider} from '../../providers/requests/requests';
 })
 export class CategoriesPage {
 
+  categories : any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public RequestProvider: RequestsProvider) {
 
 
@@ -23,6 +25,8 @@ export class CategoriesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoriesPage');
+    this.RequestProvider.retrieveArtists().subscribe( data => {this.categories = data; console.log(data);});
   }
+
 
 }
