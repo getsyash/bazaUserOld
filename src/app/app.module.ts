@@ -29,6 +29,7 @@ import { CategoriesPage } from '../pages/categories/categories';
 import { UsersPage } from '../pages/users/users';
 import { AuthProvider } from '../providers/auth/auth';
 import { SplashPage } from '../pages/splash/splash';
+import { SMS } from '@ionic-native/sms';
 
 // import services
 // end import services
@@ -93,7 +94,8 @@ import { SplashPage } from '../pages/splash/splash';
     WeatherProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     RequestsProvider,
-    AuthProvider
+    AuthProvider,
+    SMS
   ]
 })
 
