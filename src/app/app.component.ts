@@ -1,5 +1,5 @@
 import { Component, ViewChild } from "@angular/core";
-import { Platform, Nav } from "ionic-angular";
+import { Platform, Nav, ModalController } from "ionic-angular";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -9,6 +9,7 @@ import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { CategoriesPage } from "../pages/categories/categories";
 import { UsersPage } from "../pages/users/users";
+import {SplashPage} from "../pages/splash/splash"
 
 export interface MenuItem {
     title: string;
@@ -31,8 +32,19 @@ export class MyApp {
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
-    public keyboard: Keyboard
+    public keyboard: Keyboard,
+    public modalCtrl :ModalController
   ) {
+
+    platform.ready().then(() => {
+
+      statusBar.styleDefault();
+
+      let splash = modalCtrl.create(SplashPage);
+      splash.present();
+
+  });
+
     this.initializeApp();
 
     this.appMenuItems = [

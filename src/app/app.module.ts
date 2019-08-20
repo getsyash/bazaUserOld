@@ -28,6 +28,7 @@ import { RequestsProvider } from '../providers/requests/requests';
 import { CategoriesPage } from '../pages/categories/categories';
 import { UsersPage } from '../pages/users/users';
 import { AuthProvider } from '../providers/auth/auth';
+import { SplashPage } from '../pages/splash/splash';
 
 // import services
 // end import services
@@ -50,7 +51,8 @@ import { AuthProvider } from '../providers/auth/auth';
     TripDetailPage,
     TripsPage,
     CategoriesPage,
-    UsersPage
+    UsersPage,
+    SplashPage
   ],
   imports: [
     BrowserModule,
@@ -79,7 +81,8 @@ import { AuthProvider } from '../providers/auth/auth';
     TripDetailPage,
     TripsPage,
     CategoriesPage,
-    UsersPage
+    UsersPage,
+    SplashPage
   ],
   providers: [
     StatusBar,

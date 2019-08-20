@@ -25,9 +25,7 @@ export class LoginPage {
 
   // login and go to home page
   login() {
-    console.log(this.email, this.password);
-    this.AuthProvider.postLogin(this.email, this.password).subscribe(data=>{ console.log(data)});
-
+    this.nav.setRoot(CategoriesPage);
   }
 
 
