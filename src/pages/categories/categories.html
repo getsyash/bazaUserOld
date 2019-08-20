@@ -1,25 +1,28 @@
 <!-- -->
 <ion-header>
-    <ion-navbar color="primary">
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>Baza </strong>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
       </button>
-      <ion-title>
-        <strong>Baza </strong>
-      </ion-title>
-      <ion-buttons end>
-        <button ion-button tappable (click)="presentNotifications($event)">
-          <ion-icon name="notifications"></ion-icon>
-        </button>
-        <button ion-button tappable (click)="goToAccount()">
-          <ion-icon name="cog"></ion-icon>
-        </button>
-      </ion-buttons>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding class="animated fadeIn common-bg">
-  
-  
-  </ion-content>
-  
+      <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn common-bg">
+  <ion-list>
+    <div class="ListItem"  *ngFor ="let user of UserImages" id="Category-{{user.id}}">
+      <ion-avatar><img src="{{user.img}}"></ion-avatar>
+      <ion-label><h2 [innerHTML]="user.name"></h2></ion-label>
+    </div>
+  </ion-list>
+</ion-content>

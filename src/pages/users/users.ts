@@ -17,7 +17,6 @@ import 'rxjs/add/operator/map';
 })
 export class UsersPage {
 
-  users:any = [];
   image: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public RequestProvider : RequestsProvider) {
@@ -26,19 +25,7 @@ export class UsersPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsersPage');
-    this.RequestProvider.retrieveArtists().subscribe( data =>{
-      console.log(data);
-      this.users = data;
-    });
   }
 
-  LoadImage(image){
-    this.RequestProvider.retrieveImage(image).subscribe( 
-      data => {     
-      this.image = data;
-        console.log(this.image);
-      }
-    );
-  }
 
 }

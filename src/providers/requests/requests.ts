@@ -21,7 +21,7 @@ export class RequestsProvider {
   }
 
   retrieveArtists(){
-    return this.http.get(this.baseUrl + 'employees') ;
+    return this.http.get(this.baseUrl + 'categories');
   }
 retrieveImage(image){
     return this.http.get(this.baseUrl + 'media/'+image);

@@ -6,7 +6,23 @@
 .primary-bg {
   background-color: color($colors, primary) !important;
 }
-
+.button-md-dark {
+  color: #fff;
+  background-color: transparent;
+  border: 1.5px solid #dc9a01;
+  padding: 25px 0px !important;
+  border-radius: 15px;
+}.button-md-dark:hover {
+  background-color: #dc9a01 !important;
+}div.ListItem {
+  width: 50%;
+  display: inline;
+  padding: 10px;
+  float: left;
+}#Category-1 img {
+  height: 65vh;
+  object-fit: cover;
+}
 .secondary-bg {
   background-color: color($colors, secondary) !important;
 }
@@ -297,11 +313,12 @@ ion-navbar.no-border {
 
 // style for auth pages
 .auth-page {
-  background-color: #fff;
+  background-color: #000;
   &::after {
     content: "";
-    background: url("../assets/img/bg.jpg") no-repeat;
-    background-size: cover;
+    
+    background: url("../assets/img/bg.png");
+    background-size: contain;
     top: 0;
     left: 0;
     bottom: 0;
@@ -319,9 +336,9 @@ ion-navbar.no-border {
     .login-content {
       width: 86%;
 
-      .logo {
-        width: 60px;
-        height: 60px;
+      .logo {    
+        width: 175px;
+        height: 100px;
         margin: 20px auto 0;
         border-radius: 10%;
         background: url("../assets/img/ionic3-ico.png") no-repeat;
