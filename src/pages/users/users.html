@@ -19,6 +19,9 @@
 </ion-header>
 
 <ion-content padding class="animated fadeIn common-bg">
-
-
+  <ion-list>
+      <div class="ArtistList"  *ngFor ="let user of users" id="user-{{user.id}}">
+        <ion-avatar><img src="{{user.img}}"></ion-avatar>
+      </div>
+    </ion-list>
 </ion-content>

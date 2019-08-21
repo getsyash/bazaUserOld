@@ -24,6 +24,7 @@ export class CategoriesPage {
 
 
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoriesPage');

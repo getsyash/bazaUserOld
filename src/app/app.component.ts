@@ -23,7 +23,7 @@ export interface MenuItem {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CategoriesPage;
+  rootPage: any = UsersPage;
 
   appMenuItems: Array<MenuItem>;
 

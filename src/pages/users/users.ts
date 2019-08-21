@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RequestsProvider } from '../../providers/requests/requests';
 import 'rxjs/add/operator/map';
-
+import { HttpClient } from '@angular/common/http';
 /**
  * Generated class for the UsersPage page.
  *
@@ -18,14 +18,29 @@ import 'rxjs/add/operator/map';
 export class UsersPage {
 
   image: any;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public RequestProvider : RequestsProvider) {
+  users: any; 
+  constructor(public navCtrl: NavController, public navParams: NavParams, public RequestProvider : RequestsProvider, public http : HttpClient) {
 
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsersPage');
+    /*
+    this.RequestProvider.retrieveArtists().subscribe( data =>{
+      console.log(data);
+      this.users = data;
+    });
+    */
+
+    this.http.get('../assets/users.json').subscribe(
+      data => {
+        console.log(data);
+        this.users = data;
+      }
+    );
+
   }
+
 
 
 }
