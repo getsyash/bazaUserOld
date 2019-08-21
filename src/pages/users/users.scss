@@ -1,12 +1,19 @@
 page-users {
     ion-avatar {
         width: 25%;
-        float: left;
         display: inline-block;
-    }.ListItem ion-label {
+    }.ArtistList ion-label {
         width: 70%;
         display: inline-block;
-        float: left;
         padding-left: 5%;
+    }.ArtistList {
+        background: #efefef;
+        margin-bottom: 10px;
+        padding: 10px;
+    }.toolbar-background {
+        background-image: url(../../assets/img/artist-profiel-bg.jpg) !important;
+        background-size: contain !important;
+    }.toolbar-content.toolbar-content-md {
+        text-align: center;
     }
 }

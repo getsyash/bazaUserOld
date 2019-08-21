@@ -1,3 +1,6 @@
-page-login,
-.login {
+page-login{
+    .fixed-content, .scroll-content {
+        margin-top: auto !important;
+    }
 }
+

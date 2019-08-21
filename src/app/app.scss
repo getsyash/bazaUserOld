@@ -5,6 +5,39 @@
 // global styles
 .primary-bg {
   background-color: color($colors, primary) !important;
+}.SideToggle .scroll-content ,.SideToggle button.text-1x.item.item-block.item-md {
+  background: #000 !important;
+}.SideToggle  .item-md .text-md-primary {
+  color: #fff;
+}.user-avatar {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: unset !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  text-align: center;
+}.grid .row p {
+  width: 100% !important;
+  text-align: center;
+  color: #fff;
+}.grid .row h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}ion-toolbar.user-profile.toolbar.toolbar-md {
+  min-height: 35vh;
+}.menu-inner .fixed-content, .menu-inner .scroll-content {
+  margin-top: 35vh !important;
+}.user-profile .toolbar-background {
+  background-image: url('../assets/img/user_profile-SIDE-MENU.jpg') !important;
+  background-size: cover !important;
+  background-position: center;
+}
+.toolbar-md {
+    padding: 4px;
+    min-height: 20vh;
+}.fixed-content,.scroll-content {
+  margin-top: 20vh !important;
 }
 .button-md-dark {
   color: #fff;

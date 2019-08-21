@@ -14,19 +14,13 @@ import {WeatherProvider} from "../services/weather";
 
 import {MyApp} from "./app.component";
 
-import {SettingsPage} from "../pages/settings/settings";
-import {CheckoutTripPage} from "../pages/checkout-trip/checkout-trip";
-import {HomePage} from "../pages/home/home";
 import {LoginPage} from "../pages/login/login";
 import {NotificationsPage} from "../pages/notifications/notifications";
 import {RegisterPage} from "../pages/register/register";
-import {SearchLocationPage} from "../pages/search-location/search-location";
-import {TripDetailPage} from "../pages/trip-detail/trip-detail";
-import {TripsPage} from "../pages/trips/trips";
-import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import { RequestsProvider } from '../providers/requests/requests';
 import { CategoriesPage } from '../pages/categories/categories';
 import { UsersPage } from '../pages/users/users';
+import { SplashPage } from '../pages/splash/splash';
 
 // import services
 // end import services
@@ -38,18 +32,12 @@ import { UsersPage } from '../pages/users/users';
 @NgModule({
   declarations: [
     MyApp,
-    SettingsPage,
-    CheckoutTripPage,
-    HomePage,
     LoginPage,
-    LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
-    SearchLocationPage,
-    TripDetailPage,
-    TripsPage,
     CategoriesPage,
-    UsersPage
+    UsersPage,
+    SplashPage
   ],
   imports: [
     BrowserModule,
@@ -67,18 +55,12 @@ import { UsersPage } from '../pages/users/users';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    SettingsPage,
-    CheckoutTripPage,
-    HomePage,
     LoginPage,
-    LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
-    SearchLocationPage,
-    TripDetailPage,
-    TripsPage,
     CategoriesPage,
-    UsersPage
+    UsersPage,
+    SplashPage
   ],
   providers: [
     StatusBar,

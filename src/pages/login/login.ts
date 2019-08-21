@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
-import {HomePage} from "../home/home";
 import {RegisterPage} from "../register/register";
+import { CategoriesPage } from "../categories/categories";
 
 @Component({
   selector: 'page-login',
@@ -20,7 +20,7 @@ export class LoginPage {
 
   // login and go to home page
   login() {
-    this.nav.setRoot(HomePage);
+    this.nav.setRoot(CategoriesPage);
   }
 
   forgotPass() {
