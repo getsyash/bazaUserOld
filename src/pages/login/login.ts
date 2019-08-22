@@ -1,7 +1,10 @@
+import { CategoriesPage } from './../categories/categories';
 import {Component} from "@angular/core";
 import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
 import {RegisterPage} from "../register/register";
-import { CategoriesPage } from "../categories/categories";
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
+import firebase from 'firebase';
 
 @Component({
   selector: 'page-login',
@@ -9,9 +12,24 @@ import { CategoriesPage } from "../categories/categories";
 })
 export class LoginPage {
 
-  constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
+  phoneNumber : any = '';
+  company = {
+    form:null
+  }; 
+  public recaptchaVerifier:firebase.auth.RecaptchaVerifier;
+  constructor(public alertCtrl:AlertController ,public afAuth: AngularFireAuth,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
     this.menu.swipeEnable(false);
+    this.company.form = "male";
   }
+  ionViewDidLoad(){
+  this.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container',{
+    'size': 'invisible',
+    'callback':function(response){
+      console.log(response);
+    }
+  });
+}
+  
 
   // go to register page
   register() {
@@ -19,46 +37,61 @@ export class LoginPage {
   }
 
   // login and go to home page
-  login() {
-    this.nav.setRoot(CategoriesPage);
-  }
+  /* Login with email
+  async login() {
+    //this.nav.setRoot(CategoriesPage);
+    const { username , password } = this
+    try {
+      const res = await this.afAuth.auth.signInWithEmailAndPassword(username,password);
+      console.log(res);
+      if (res){
+        this.nav.setRoot(CategoriesPage);
+      }
+    }catch (err){
+      console.dir(err);
+			if(err.code === "auth/user-not-found") {
+				console.log("User not found")
+			}
 
-  forgotPass() {
-    let forgot = this.forgotCtrl.create({
-      title: 'Forgot Password?',
-      message: "Enter you email address to send a reset link password.",
-      inputs: [
-        {
-          name: 'email',
-          placeholder: 'Email',
-          type: 'email'
-        },
-      ],
+    }
+  }
+  */
+  
+  async login(phonenumber : number){    
+    // Login with phonenumber
+    const appVerifier = this.recaptchaVerifier;
+    const phoneNumberString = "+91" + phonenumber;
+    firebase.auth().signInWithPhoneNumber(phoneNumberString, appVerifier)
+    .then(confirmationResult => {
+      // SMS sent. Prompt user to type the code from the message, then sign the
+      // user in with confirmationResult.confirm(code).
+      let prompt = this.alertCtrl.create({
+      title: 'Enter the Confirmation code',
+      inputs: [{ name: 'confirmationCode', placeholder: 'Confirmation Code' }],
       buttons: [
-        {
-          text: 'Cancel',
-          handler: data => {
-            console.log('Cancel clicked');
-          }
+        { text: 'Cancel',
+          handler: data => { console.log('Cancel clicked'); }
         },
-        {
-          text: 'Send',
+        { text: 'Send',
           handler: data => {
-            console.log('Send clicked');
-            let toast = this.toastCtrl.create({
-              message: 'Email was sended successfully',
-              duration: 3000,
-              position: 'top',
-              cssClass: 'dark-trans',
-              closeButtonText: 'OK',
-              showCloseButton: true
+            confirmationResult.confirm(data.confirmationCode)
+            .then(function (result) {
+              // User signed in successfully.
+              console.log(result.user);
+              // ...
+            }).catch(function (error) {
+              // User couldn't sign in (bad verification code?)
+              // ...
             });
-            toast.present();
           }
         }
       ]
     });
-    forgot.present();
-  }
+    prompt.present();
+  })
+    .catch(function (error) {
+      console.error("SMS not sent", error);
+    });
 
+  }
 }

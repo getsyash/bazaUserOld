@@ -8,6 +8,11 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
 
+
+import firebaseConfig from './firebase'
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth'
+
 import {ActivityService} from "../services/activity-service";
 import {TripService} from "../services/trip-service";
 import {WeatherProvider} from "../services/weather";
@@ -42,13 +47,15 @@ import { SplashPage } from '../pages/splash/splash';
   imports: [
     BrowserModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
     IonicModule.forRoot(MyApp, {
       scrollPadding: false,
       scrollAssist: true,
       autoFocusAssist: false
     }),
     IonicStorageModule.forRoot({
-      name: '__ionic3_start_theme',
+      name: 'Baza',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
     })
   ],
