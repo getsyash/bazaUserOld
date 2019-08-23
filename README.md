@@ -26,6 +26,10 @@ ___
 
 ___
 
+## Firebase Installation
+
+* npm i @angular/fire
+
 ## Know Ionic 4 Start Theme
 
 * [Ionic 4 Start Theme (Github)](https://github.com/ionictheme/ionic4-start-theme)
