@@ -25,7 +25,6 @@ export class LoginPage {
   this.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container',{
     'size': 'invisible',
     'callback':function(response){
-      console.log(response);
     }
   });
 }
@@ -74,16 +73,15 @@ export class LoginPage {
         },
         { text: 'Send',
           handler: data => {
-            confirmationResult.confirm(data.confirmationCode)
-            .then(function (result) {
-              // User signed in successfully.
-              console.log(result.user);
+            console.log(data.confirmationCode);
+            let signinCredential = firebase.auth.PhoneAuthProvider.credential(confirmationResult.verificationId,data.confirmationCode);
+            firebase.auth().signInWithCredential(signinCredential).then((info)=>{
+              console.log(info);
               this.nav.setRoot(CategoriesPage);
-              // ...
-            }).catch(function (error) {
-              // User couldn't sign in (bad verification code?)
-              // ...
-            });
+              },(err)=>{
+                console.log(err)
+              }
+            )
           }
         }
       ]
