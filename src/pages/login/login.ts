@@ -78,6 +78,7 @@ export class LoginPage {
             .then(function (result) {
               // User signed in successfully.
               console.log(result.user);
+              this.nav.setRoot(CategoriesPage);
               // ...
             }).catch(function (error) {
               // User couldn't sign in (bad verification code?)
