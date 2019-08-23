@@ -1,3 +1,4 @@
+import { UserService } from './../../app/userService';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RequestsProvider } from '../../providers/requests/requests';
@@ -19,7 +20,7 @@ export class UsersPage {
 
   image: any;
   users: any; 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public RequestProvider : RequestsProvider, public http : HttpClient) {
+  constructor(public userService : UserService,public navCtrl: NavController, public navParams: NavParams, public RequestProvider : RequestsProvider, public http : HttpClient) {
 
   }
 

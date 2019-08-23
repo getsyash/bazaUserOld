@@ -10,10 +10,7 @@
 
 <ion-content padding class="animated fadeIn common-bg">
   <ion-list style="column-count: 2">
-    <div>
-      <ion-input></ion-input>
-    </div>
-    <div class="ListItem"  *ngFor ="let user of UserImages" id="Category-{{user.id}}">
+    <div class="ListItem"  *ngFor ="let user of UserImages" id="Category-{{user.id}}" (click)="openCategory(user)" >
       <ion-avatar><img src="{{user.img}}"></ion-avatar>
     </div>
   </ion-list>

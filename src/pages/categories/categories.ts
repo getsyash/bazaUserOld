@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {RequestsProvider} from '../../providers/requests/requests';
 import { HttpClient } from '@angular/common/http';
+import { SingleCategoryPage } from '../single-category/single-category';
 
 /**
  * Generated class for the CategoriesPage page.
@@ -38,6 +39,12 @@ export class CategoriesPage {
         this.UserImages = data;
       }
     );
+
+  }
+
+  openCategory(post){    
+    console.log('test');
+    this.navCtrl.setRoot(SingleCategoryPage,{id:post});
 
   }
 

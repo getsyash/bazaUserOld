@@ -1,5 +1,8 @@
+import { UserProfilePage } from './../pages/user-profile/user-profile';
 import { Component, ViewChild } from "@angular/core";
 import { Platform, Nav, ModalController } from "ionic-angular";
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,7 +27,7 @@ export interface MenuItem {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = CategoriesPage;
 
   appMenuItems: Array<MenuItem>;
 
@@ -33,7 +36,8 @@ export class MyApp {
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public keyboard: Keyboard,
-    public modalCtrl : ModalController
+    public modalCtrl : ModalController,
+    public afAuth : AngularFireAuth
   ) {
     this.initializeApp();
 
@@ -78,7 +82,13 @@ export class MyApp {
   }
 
   logout() {
-    this.nav.setRoot(LoginPage);
+    this.afAuth.auth.signOut().then(()=>{
+    this.nav.setRoot(LoginPage)
+    })
+  }
+
+  openProfile(){
+    this.nav.setRoot(UserProfilePage);
   }
 
 }

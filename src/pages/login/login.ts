@@ -1,3 +1,4 @@
+import { UserService } from './../../app/userService';
 import { CategoriesPage } from './../categories/categories';
 import {Component} from "@angular/core";
 import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
@@ -17,7 +18,7 @@ export class LoginPage {
     form:null
   }; 
   public recaptchaVerifier:firebase.auth.RecaptchaVerifier;
-  constructor(public alertCtrl:AlertController ,public afAuth: AngularFireAuth,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
+  constructor(public userService : UserService ,public alertCtrl:AlertController ,public afAuth: AngularFireAuth,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
     this.menu.swipeEnable(false);
     this.company.form = "male";
   }
@@ -36,26 +37,7 @@ export class LoginPage {
   }
 
   // login and go to home page
-  /* Login with email
-  async login() {
-    //this.nav.setRoot(CategoriesPage);
-    const { username , password } = this
-    try {
-      const res = await this.afAuth.auth.signInWithEmailAndPassword(username,password);
-      console.log(res);
-      if (res){
-        this.nav.setRoot(CategoriesPage);
-      }
-    }catch (err){
-      console.dir(err);
-			if(err.code === "auth/user-not-found") {
-				console.log("User not found")
-			}
 
-    }
-  }
-  */
-  
   async login(phonenumber : number){    
     // Login with phonenumber
     const appVerifier = this.recaptchaVerifier;
@@ -77,6 +59,8 @@ export class LoginPage {
             let signinCredential = firebase.auth.PhoneAuthProvider.credential(confirmationResult.verificationId,data.confirmationCode);
             firebase.auth().signInWithCredential(signinCredential).then((info)=>{
               console.log(info);
+              console.log(info.user.phoneNumber)
+              this.userService.setUser(info.user) ;
               this.nav.setRoot(CategoriesPage);
               },(err)=>{
                 console.log(err)

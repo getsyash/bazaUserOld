@@ -1,3 +1,6 @@
+import { UserProfilePage } from './../pages/user-profile/user-profile';
+import { UserService } from './userService';
+import { SingleCategoryPage } from './../pages/single-category/single-category';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -42,7 +45,9 @@ import { SplashPage } from '../pages/splash/splash';
     RegisterPage,
     CategoriesPage,
     UsersPage,
-    SplashPage
+    SplashPage,
+    SingleCategoryPage,
+    UserProfilePage
   ],
   imports: [
     BrowserModule,
@@ -67,7 +72,9 @@ import { SplashPage } from '../pages/splash/splash';
     RegisterPage,
     CategoriesPage,
     UsersPage,
-    SplashPage
+    SplashPage,
+    SingleCategoryPage,
+    UserProfilePage
   ],
   providers: [
     StatusBar,
@@ -77,7 +84,8 @@ import { SplashPage } from '../pages/splash/splash';
     TripService,
     WeatherProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    RequestsProvider
+    RequestsProvider,
+    UserService,
   ]
 })
 
