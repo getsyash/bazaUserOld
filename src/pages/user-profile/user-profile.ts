@@ -20,9 +20,6 @@ export class UserProfilePage {
 
   constructor(public userService : UserService,public navCtrl: NavController, public navParams: NavParams) {
 
-    console.log(this.userService.user);
-    this.UserData = this.userService.user;
-
   }
 
   ionViewDidLoad() {

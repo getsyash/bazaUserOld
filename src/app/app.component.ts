@@ -2,7 +2,6 @@ import { UserProfilePage } from './../pages/user-profile/user-profile';
 import { Component, ViewChild } from "@angular/core";
 import { Platform, Nav, ModalController } from "ionic-angular";
 import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase/app';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';

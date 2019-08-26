@@ -4,7 +4,6 @@ import {Component} from "@angular/core";
 import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
 import {RegisterPage} from "../register/register";
 import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase/app';
 import firebase from 'firebase';
 
 @Component({
@@ -18,7 +17,7 @@ export class LoginPage {
     form:null
   }; 
   public recaptchaVerifier:firebase.auth.RecaptchaVerifier;
-  constructor(public userService : UserService ,public alertCtrl:AlertController ,public afAuth: AngularFireAuth,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
+  constructor(public user : UserService ,public alertCtrl:AlertController ,public afAuth: AngularFireAuth,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
     this.menu.swipeEnable(false);
     this.company.form = "male";
   }
@@ -42,7 +41,7 @@ export class LoginPage {
     // Login with phonenumber
     const appVerifier = this.recaptchaVerifier;
     const phoneNumberString = "+91" + phonenumber;
-    firebase.auth().signInWithPhoneNumber(phoneNumberString, appVerifier)
+    const res = firebase.auth().signInWithPhoneNumber(phoneNumberString, appVerifier)
     .then(confirmationResult => {
       // SMS sent. Prompt user to type the code from the message, then sign the
       // user in with confirmationResult.confirm(code).
@@ -58,10 +57,10 @@ export class LoginPage {
             console.log(data.confirmationCode);
             let signinCredential = firebase.auth.PhoneAuthProvider.credential(confirmationResult.verificationId,data.confirmationCode);
             firebase.auth().signInWithCredential(signinCredential).then((info)=>{
-              console.log(info);
-              console.log(info.user.phoneNumber)
-              this.userService.setUser(info.user) ;
-              this.nav.setRoot(CategoriesPage);
+              console.log(info)
+              console.log(info.user)
+              this.user.setUser({username: info.user.displayName ,uid : info.user.uid})
+              this.nav.setRoot(CategoriesPage)
               },(err)=>{
                 console.log(err)
               }
@@ -71,10 +70,10 @@ export class LoginPage {
       ]
     });
     prompt.present();
-  })
-    .catch(function (error) {
-      console.error("SMS not sent", error);
-    });
+  }).catch(function (error) {
 
+    console.log("SMS not Sent", error)
+
+  });
   }
 }

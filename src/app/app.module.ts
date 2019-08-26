@@ -14,7 +14,10 @@ import {Keyboard} from '@ionic-native/keyboard';
 
 import firebaseConfig from './firebase'
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule } from '@angular/fire/auth'
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import {ActivityService} from "../services/activity-service";
 import {TripService} from "../services/trip-service";
@@ -29,6 +32,8 @@ import { RequestsProvider } from '../providers/requests/requests';
 import { CategoriesPage } from '../pages/categories/categories';
 import { UsersPage } from '../pages/users/users';
 import { SplashPage } from '../pages/splash/splash';
+import { AuthService } from './auth.service';
+import { ArtistPage } from '../pages/artist/artist';
 
 // import services
 // end import services
@@ -47,13 +52,17 @@ import { SplashPage } from '../pages/splash/splash';
     UsersPage,
     SplashPage,
     SingleCategoryPage,
-    UserProfilePage
+    UserProfilePage,
+    ArtistPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
     IonicModule.forRoot(MyApp, {
       scrollPadding: false,
       scrollAssist: true,
@@ -74,7 +83,8 @@ import { SplashPage } from '../pages/splash/splash';
     UsersPage,
     SplashPage,
     SingleCategoryPage,
-    UserProfilePage
+    UserProfilePage,
+    ArtistPage
   ],
   providers: [
     StatusBar,
@@ -86,6 +96,7 @@ import { SplashPage } from '../pages/splash/splash';
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     RequestsProvider,
     UserService,
+    AuthService
   ]
 })
 
