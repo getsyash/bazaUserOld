@@ -10,9 +10,12 @@ import { Keyboard } from '@ionic-native/keyboard';
 
 import { LoginPage } from "../pages/login/login";
 import { CategoriesPage } from "../pages/categories/categories";
-import { UsersPage } from "../pages/users/users";
 import { SplashPage } from "../pages/splash/splash"
 import { NotificationsPage } from "../pages/notifications/notifications";
+import { ReferPage } from '../pages/refer/refer';
+import { FeedbackPage } from './../pages/feedback/feedback';
+import { BookingsPage } from './../pages/bookings/bookings';
+import { HelpdeskPage } from './../pages/helpdesk/helpdesk';
 
 
 export interface MenuItem {
@@ -44,10 +47,13 @@ export class MyApp {
     this.initializeApp();
 
     this.appMenuItems = [
-      {title: 'Categories', component: CategoriesPage, icon: ''},
-      {title: 'Artists', component: UsersPage, icon: ''},
+      {title: 'Home', component: CategoriesPage, icon: ''},
+      {title:'My Profile', component: UserProfilePage, icon: ''},
+      {title: 'My Booking', component: BookingsPage, icon: ''},
       {title: 'Notifications', component: NotificationsPage, icon: ''},
-      
+      {title: 'Refer a Friend', component: ReferPage, icon: ''},
+      {title: 'Help Desk', component: HelpdeskPage, icon: ''},
+      {title: 'Feed Back', component: FeedbackPage, icon: ''},      
     ];
 
     platform.ready().then(() => {

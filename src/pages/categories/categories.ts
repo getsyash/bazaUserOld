@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {RequestsProvider} from '../../providers/requests/requests';
 import { HttpClient } from '@angular/common/http';
 import { SingleCategoryPage } from '../single-category/single-category';
 import { AngularFireAuth } from '@angular/fire/auth';
@@ -28,7 +27,6 @@ export class CategoriesPage {
 
   constructor(public navCtrl: NavController, 
     public navParams: NavParams, 
-    public RequestProvider: RequestsProvider, 
     public http: HttpClient,
     public afAuth : AngularFireAuth,
     public afStore : AngularFireStorage,

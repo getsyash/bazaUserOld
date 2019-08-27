@@ -1,10 +1,13 @@
-import {Component} from "@angular/core";
+import { UserService } from './../../app/userService';
+
 import {NavController,AlertController} from "ionic-angular";
 import {LoginPage} from "../login/login";
 import { CategoriesPage } from "../categories/categories";
-import { AngularFireAuth } from "@angular/fire/auth";
 import {auth} from 'firebase/app';
 import firebase from 'firebase';
+import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 
 @Component({
@@ -17,9 +20,16 @@ export class RegisterPage {
   email: string ="";
   phonenumber : number ;
   gender : string = "";
+  password : string = '';
 
   public recaptchaVerifier:firebase.auth.RecaptchaVerifier;
-  constructor(public alertCtrl:AlertController ,public afAuth: AngularFireAuth, public nav: NavController) {
+  constructor(
+		public afAuth: AngularFireAuth,
+		public afstore: AngularFirestore,
+		public user: UserService,
+		public alertController: AlertController,
+    public alertCtrl:AlertController ,
+    public nav: NavController) {
   }
 
   ionViewDidLoad(){   
@@ -31,6 +41,30 @@ export class RegisterPage {
     });
   }
 
+
+
+  async register(){
+    const { username, password,email } = this
+
+    try{
+      const res = await this.afAuth.auth.createUserWithEmailAndPassword(email , password)
+      this.afstore.doc(`users/${res.user.uid}`).set({
+				username
+      })
+      this.user.setUser({
+				username,
+				uid: res.user.uid
+      })      
+      this.nav.setRoot(CategoriesPage);
+      
+    }catch(err){
+			console.dir(err)
+    }
+
+  }
+
+
+  /*
   // register and go to home page
   async register(phonenumber : number){    
     // Login with phonenumber
@@ -70,6 +104,8 @@ export class RegisterPage {
     });
 
   }
+
+  */
 
   // go to login page
   login() {

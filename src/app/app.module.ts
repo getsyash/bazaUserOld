@@ -1,6 +1,4 @@
-import { UserProfilePage } from './../pages/user-profile/user-profile';
 import { UserService } from './userService';
-import { SingleCategoryPage } from './../pages/single-category/single-category';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -28,12 +26,6 @@ import {MyApp} from "./app.component";
 import {LoginPage} from "../pages/login/login";
 import {NotificationsPage} from "../pages/notifications/notifications";
 import {RegisterPage} from "../pages/register/register";
-import { RequestsProvider } from '../providers/requests/requests';
-import { CategoriesPage } from '../pages/categories/categories';
-import { UsersPage } from '../pages/users/users';
-import { SplashPage } from '../pages/splash/splash';
-import { AuthService } from './auth.service';
-import { SingleArtistPage } from '../pages/single-artist/single-artist';
 
 // import services
 // end import services
@@ -48,12 +40,6 @@ import { SingleArtistPage } from '../pages/single-artist/single-artist';
     LoginPage,
     NotificationsPage,
     RegisterPage,
-    CategoriesPage,
-    UsersPage,
-    SplashPage,
-    SingleCategoryPage,
-    UserProfilePage,
-    SingleArtistPage
   ],
   imports: [
     BrowserModule,
@@ -79,12 +65,6 @@ import { SingleArtistPage } from '../pages/single-artist/single-artist';
     LoginPage,
     NotificationsPage,
     RegisterPage,
-    CategoriesPage,
-    UsersPage,
-    SplashPage,
-    SingleCategoryPage,
-    UserProfilePage,
-    SingleArtistPage
   ],
   providers: [
     StatusBar,
@@ -94,9 +74,7 @@ import { SingleArtistPage } from '../pages/single-artist/single-artist';
     TripService,
     WeatherProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    RequestsProvider,
     UserService,
-    AuthService
   ]
 })
 

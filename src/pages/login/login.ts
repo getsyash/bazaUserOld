@@ -5,6 +5,7 @@ import {NavController, AlertController, ToastController, MenuController} from "i
 import {RegisterPage} from "../register/register";
 import { AngularFireAuth } from '@angular/fire/auth';
 import firebase from 'firebase';
+import { NotificationsPage } from '../notifications/notifications';
 
 @Component({
   selector: 'page-login',
@@ -12,12 +13,21 @@ import firebase from 'firebase';
 })
 export class LoginPage {
 
-  phoneNumber : any = '';
+  email : any = ''
+  password : any = ''
   company = {
     form:null
   }; 
+  VerificationId : string = '';
   public recaptchaVerifier:firebase.auth.RecaptchaVerifier;
-  constructor(public user : UserService ,public alertCtrl:AlertController ,public afAuth: AngularFireAuth,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
+  constructor(
+    public user : UserService ,
+    public alertCtrl:AlertController ,
+    public afAuth: AngularFireAuth,
+    public nav: NavController, 
+    public forgotCtrl: AlertController, 
+    public menu: MenuController, 
+    public toastCtrl: ToastController) {
     this.menu.swipeEnable(false);
     this.company.form = "male";
   }
@@ -35,8 +45,18 @@ export class LoginPage {
     this.nav.setRoot(RegisterPage);
   }
 
-  // login and go to home page
+  async login(){
+    firebase.auth().signInWithEmailAndPassword(this.email,this.password).then((user)=>{
+      console.log(user);
+      this.nav.setRoot(CategoriesPage);
+    }).catch((err)=>{
+      console.log(err)
+    })
+  }
 
+
+  // login and go to home page
+/*
   async login(phonenumber : number){    
     // Login with phonenumber
     const appVerifier = this.recaptchaVerifier;
@@ -75,4 +95,7 @@ export class LoginPage {
 
   });
   }
+
+*/
+
 }
