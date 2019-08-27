@@ -28,10 +28,9 @@ export interface MenuItem {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
+  rootPage: any = LoginPage;
+
   appMenuItems: Array<MenuItem>;
-
-  rootPage: any = LoginPage
-
   constructor(
     public UserService : UserService,
     public platform: Platform,

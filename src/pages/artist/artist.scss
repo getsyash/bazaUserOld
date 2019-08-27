@@ -1,0 +1,47 @@
+page-artist {
+    .toolbar-md-primary .toolbar-background-md{
+        background-size:cover; 
+        background-image: url('../../assets/img/Category_bg.png')
+    }ion-row h2 {
+        margin: 0px auto;
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+        padding-top: 15px;
+    }.BookingWrapper{
+        text-align: center;
+    }.BookingWrapper button{        
+        padding: 10px 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        color: #fff;
+        background: #dd9d09;
+    }.toolbar-md {
+        padding: 4px;
+        min-height: 35vh;
+    }.fixed-content, .scroll-content {
+        margin-top: 35vh !important;
+    }.toolbar-content img{
+        width: 30vw;
+        position: relative;
+        right: 10%;
+        height: 30vw;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 100%;
+    }.UserName{
+        color: #fff;
+        position: relative;
+        right: 10%;    
+        padding-top: 15px;
+    }.colRight{
+        float:right;
+    }.colLeft{
+        float: left;
+    }.UserName .col:first-child {
+        border-right: 1px solid;
+        padding-right: 10px;
+        margin-right: 5px;
+    }.row p {
+        color: #4f4f4f;
+    }
+}
