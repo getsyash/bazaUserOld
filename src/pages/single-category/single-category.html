@@ -15,16 +15,9 @@
 
 
 <ion-content padding>
-  <ion-list>
-      <div class="ion-row SearchBar">
-          <div class="col col-2">  
-            <ion-item>
-              <ion-input type="text" [(ngModel)]="SearchBar" name="SearchBar" placeholder="Search for Artists"></ion-input>
-            </ion-item>
-          </div>
-          <div class="col col-1"></div>
-        </div>     
-  </ion-list>
+  <ion-item style="margin-bottom: 15px; ">
+    <ion-input type="text" placeholder="Search Artist"></ion-input>
+  </ion-item>
   <ion-list *ngFor="let user of Userdata">
       <div (click)="openUser(user)" class="ion-row UserList-{{user.Name}}">
         <div class="col col-1"><ion-avatar><img src="{{user.img}}"></ion-avatar></div>
