@@ -57,9 +57,8 @@ export class LoginPage {
             console.log(data.confirmationCode);
             let signinCredential = firebase.auth.PhoneAuthProvider.credential(confirmationResult.verificationId,data.confirmationCode);
             firebase.auth().signInWithCredential(signinCredential).then((info)=>{
-              console.log(info)
-              console.log(info.user)
               this.user.setUser({username: info.user.displayName ,uid : info.user.uid})
+              console.log(this.user.getUID())
               this.nav.setRoot(CategoriesPage)
               },(err)=>{
                 console.log(err)

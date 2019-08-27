@@ -33,7 +33,7 @@ import { CategoriesPage } from '../pages/categories/categories';
 import { UsersPage } from '../pages/users/users';
 import { SplashPage } from '../pages/splash/splash';
 import { AuthService } from './auth.service';
-import { ArtistPage } from '../pages/artist/artist';
+import { SingleArtistPage } from '../pages/single-artist/single-artist';
 
 // import services
 // end import services
@@ -53,7 +53,7 @@ import { ArtistPage } from '../pages/artist/artist';
     SplashPage,
     SingleCategoryPage,
     UserProfilePage,
-    ArtistPage
+    SingleArtistPage
   ],
   imports: [
     BrowserModule,
@@ -84,7 +84,7 @@ import { ArtistPage } from '../pages/artist/artist';
     SplashPage,
     SingleCategoryPage,
     UserProfilePage,
-    ArtistPage
+    SingleArtistPage
   ],
   providers: [
     StatusBar,

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ArtistPage page.
+ * Generated class for the SingleArtistPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,19 +10,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-artist',
-  templateUrl: 'artist.html',
+  selector: 'page-single-artist',
+  templateUrl: 'single-artist.html',
 })
-export class ArtistPage {
+export class SingleArtistPage {
 
-  user : any 
+  data : any
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    let t = this.navParams.get('data')
-    this.user = t;
+
+    this.data = this.navParams.get('data');
+    console.log(this.data)
+
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ArtistPage');
+    console.log('ionViewDidLoad SingleArtistPage')
   }
 
 }

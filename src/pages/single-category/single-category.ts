@@ -1,7 +1,7 @@
+import { SingleArtistPage } from './../single-artist/single-artist';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { ArtistPage } from '../artist/artist';
 
 /**
  * Generated class for the SingleCategoryPage page.
@@ -35,8 +35,6 @@ export class SingleCategoryPage {
     console.log(this.category);
   }
   openUser(t){
-    console.log('Open User clicked');
-    console.log(t);
-    this.navCtrl.push(ArtistPage,{data : t})
+    this.navCtrl.push(SingleArtistPage,{data : t})
   }
 }

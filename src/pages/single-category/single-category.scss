@@ -1,7 +1,7 @@
 page-single-category {
-    .toolbar-md-primary .toolbar-background-md{
-        background-size:cover; 
-        background-image: url('../../assets/img/Category_bg.png')
+    .toolbar-background{
+        background-size:cover !important; 
+        background-image: url('../../assets/img/Category_bg.png') !important;
     }.row img {
         width: 40%   ;
         display: inline;
@@ -13,9 +13,10 @@ page-single-category {
         display: table-cell;
         vertical-align: middle;
     }.ion-row .col-1 {
-        width: 30%;
+        width: 20%;
     }.ion-row .col-2 {
-        width: 70%;
+        width: 100%;
     }
+
 
 }

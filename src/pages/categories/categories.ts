@@ -34,8 +34,8 @@ export class CategoriesPage {
     public afStore : AngularFireStorage,
     private afs : AngularFirestore
     ) {
-      this.mainuser = afs.collection(`categories`);
-      this.sub = this.mainuser.valueChanges().subscribe(event => {
+      let DumpData = afs.collection(`categories`);
+      this.sub = DumpData.valueChanges().subscribe(event => {
         this.CategoryData = event
       })
   }

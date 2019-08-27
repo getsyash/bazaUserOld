@@ -32,8 +32,10 @@
   background-image: url('../assets/img/user_profile-SIDE-MENU.jpg') !important;
   background-size: cover !important;
   background-position: center;
-}
-.toolbar-md {
+}.toolbar-background {
+  background-size: cover !important;
+  background-image: url('../../assets/img/Category_bg.png') !important;
+}.navbar {
     padding: 4px;
     min-height: 20vh;
 }.fixed-content,.scroll-content {

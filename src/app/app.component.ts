@@ -1,3 +1,4 @@
+import { UserService } from './userService';
 import { UserProfilePage } from './../pages/user-profile/user-profile';
 import { Component, ViewChild } from "@angular/core";
 import { Platform, Nav, ModalController } from "ionic-angular";
@@ -13,6 +14,7 @@ import { UsersPage } from "../pages/users/users";
 import { SplashPage } from "../pages/splash/splash"
 import { NotificationsPage } from "../pages/notifications/notifications";
 
+
 export interface MenuItem {
     title: string;
     component: any;
@@ -26,11 +28,12 @@ export interface MenuItem {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CategoriesPage;
-
   appMenuItems: Array<MenuItem>;
 
+  rootPage: any = LoginPage
+
   constructor(
+    public UserService : UserService,
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
@@ -38,6 +41,7 @@ export class MyApp {
     public modalCtrl : ModalController,
     public afAuth : AngularFireAuth
   ) {
+
     this.initializeApp();
 
     this.appMenuItems = [
@@ -55,12 +59,16 @@ export class MyApp {
       splash.present();
 
   });
+
+
   }
+
+
 
   initializeApp() {
     this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
 
+      // Okay, so the platform is ready and our plugins are available.
       //*** Control Splash Screen
       // this.splashScreen.show();
        this.splashScreen.hide();
@@ -82,7 +90,7 @@ export class MyApp {
 
   logout() {
     this.afAuth.auth.signOut().then(()=>{
-    this.nav.setRoot(LoginPage)
+      this.nav.setRoot(LoginPage)
     })
   }
 
