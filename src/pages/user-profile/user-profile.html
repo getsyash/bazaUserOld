@@ -9,11 +9,25 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <img src="../../assets/img/ionic3-ico.png" style="width: 30%;position: relative;right: 10%;">
-    <ion-col><p>My Profile</p></ion-col>
+    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">
+    <ion-col><h3>My Profile</h3></ion-col>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <button ion-button clear block (click)="updateProfile()">Update Profile</button>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="profile.name"></ion-input>
+  </ion-item>
 
+  <ion-item>
+      <ion-label>Phone</ion-label>
+      <ion-input [(ngModel)]="profile.phone"></ion-input>
+    </ion-item>
+    
+  <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input [(ngModel)]="profile.email"></ion-input>
+    </ion-item>
 </ion-content>

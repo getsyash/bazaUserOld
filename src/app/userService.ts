@@ -5,7 +5,11 @@ import { auth } from 'firebase/app'
 
 interface user {
 	username: string,
-	uid: string
+	uid: string,
+	email : string,
+	phone : string,
+	gender : string
+
 }
 
 @Injectable()
@@ -43,8 +47,11 @@ export class UserService {
 
 		if(user) {
 			this.setUser({
-				username: user.email.split('@')[0],
-				uid: user.uid
+				username: user.displayName,
+				uid: user.uid,
+				email : user.email,
+				phone : user.phoneNumber,
+				gender : user.displayName
 			})
 
 			return true

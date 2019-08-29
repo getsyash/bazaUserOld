@@ -1,5 +1,6 @@
 import { UserService } from './../../app/userService';
 
+import * as images from '../../app/imageService';
 import {NavController,AlertController} from "ionic-angular";
 import {LoginPage} from "../login/login";
 import { CategoriesPage } from "../categories/categories";
@@ -8,6 +9,7 @@ import firebase from 'firebase';
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { UserProfilePage } from '../user-profile/user-profile';
 
 
 @Component({
@@ -16,6 +18,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 export class RegisterPage {
 
+  BackgroundImages = images.default;
+  
   username: string = "";
   email: string ="";
   phonenumber : number ;
@@ -44,19 +48,18 @@ export class RegisterPage {
 
 
   async register(){
-    const { username, password,email } = this
+    const { username, password,email, gender, phonenumber } = this
 
     try{
       const res = await this.afAuth.auth.createUserWithEmailAndPassword(email , password)
       this.afstore.doc(`users/${res.user.uid}`).set({
-				username
+				username, email, gender, phonenumber
       })
-      this.user.setUser({
-				username,
-				uid: res.user.uid
-      })      
-      this.nav.setRoot(CategoriesPage);
-      
+      if (res){
+       
+        this.nav.setRoot(UserProfilePage);
+       
+      }
     }catch(err){
 			console.dir(err)
     }

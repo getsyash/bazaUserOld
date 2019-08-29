@@ -5,14 +5,19 @@ import {NavController, AlertController, ToastController, MenuController} from "i
 import {RegisterPage} from "../register/register";
 import { AngularFireAuth } from '@angular/fire/auth';
 import firebase from 'firebase';
-import { NotificationsPage } from '../notifications/notifications';
+import * as images from '../../app/imageService';
+import * as UserData from '../../app/setUser';
 
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
 })
+
+
 export class LoginPage {
 
+    
+  BackgroundImages = images.default;
   email : any = ''
   password : any = ''
   company = {
@@ -27,9 +32,10 @@ export class LoginPage {
     public nav: NavController, 
     public forgotCtrl: AlertController, 
     public menu: MenuController, 
+    public UserData : UserData.SetUser,
     public toastCtrl: ToastController) {
+
     this.menu.swipeEnable(false);
-    this.company.form = "male";
   }
   ionViewDidLoad(){
   this.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container',{
@@ -49,6 +55,8 @@ export class LoginPage {
     firebase.auth().signInWithEmailAndPassword(this.email,this.password).then((user)=>{
       console.log(user);
       this.nav.setRoot(CategoriesPage);
+      this.UserData.SetUser(user);
+      console.log(this.UserData.getuser);
     }).catch((err)=>{
       console.log(err)
     })

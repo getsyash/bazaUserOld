@@ -1,7 +1,7 @@
 import { HelpdeskPage } from './../helpdesk/helpdesk';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import * as images from '../../app/imageService';
 /**
  * Generated class for the BookingsPage page.
  *
@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class BookingsPage {
 
+  BackgroundImages = images.default;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

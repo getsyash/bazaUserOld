@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import * as images from '../../app/imageService';
+import { CategoriesPage } from '../categories/categories';
+
 /**
  * Generated class for the SingleArtistPage page.
  *
@@ -15,8 +18,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SingleArtistPage {
 
-  data : any
+  
+  BackgroundImages = images.default;
 
+  data : any
+  bookingDates :any = {}
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
     this.data = this.navParams.get('data');
@@ -24,8 +30,13 @@ export class SingleArtistPage {
 
   }
 
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SingleArtistPage')
+  }
+  bookNow(){
+    console.log(this.bookingDates);
+    this.navCtrl.setRoot(CategoriesPage);
   }
 
 }

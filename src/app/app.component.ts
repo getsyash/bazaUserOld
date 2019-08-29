@@ -1,7 +1,7 @@
 import { UserService } from './userService';
 import { UserProfilePage } from './../pages/user-profile/user-profile';
 import { Component, ViewChild } from "@angular/core";
-import { Platform, Nav, ModalController } from "ionic-angular";
+import { Platform, Nav } from "ionic-angular";
 import { AngularFireAuth } from '@angular/fire/auth';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -10,12 +10,12 @@ import { Keyboard } from '@ionic-native/keyboard';
 
 import { LoginPage } from "../pages/login/login";
 import { CategoriesPage } from "../pages/categories/categories";
-import { SplashPage } from "../pages/splash/splash"
 import { NotificationsPage } from "../pages/notifications/notifications";
 import { ReferPage } from '../pages/refer/refer';
 import { FeedbackPage } from './../pages/feedback/feedback';
 import { BookingsPage } from './../pages/bookings/bookings';
 import { HelpdeskPage } from './../pages/helpdesk/helpdesk';
+import * as images from './imageService';
 
 
 export interface MenuItem {
@@ -30,9 +30,9 @@ export interface MenuItem {
 
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
+  backgroundImages = images.default;
   rootPage: any = LoginPage;
-
+  BackgroundImages 
   appMenuItems: Array<MenuItem>;
   constructor(
     public UserService : UserService,
@@ -40,12 +40,9 @@ export class MyApp {
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public keyboard: Keyboard,
-    public modalCtrl : ModalController,
-    public afAuth : AngularFireAuth
+    public afAuth : AngularFireAuth,
   ) {
-
     this.initializeApp();
-
     this.appMenuItems = [
       {title: 'Home', component: CategoriesPage, icon: ''},
       {title:'My Profile', component: UserProfilePage, icon: ''},
@@ -59,9 +56,6 @@ export class MyApp {
     platform.ready().then(() => {
 
       statusBar.styleDefault();
-
-      let splash = modalCtrl.create(SplashPage);
-      splash.present();
 
   });
 

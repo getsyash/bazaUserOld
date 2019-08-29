@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import * as images from '../../app/imageService';
 /**
  * Generated class for the ReferPage page.
  *
@@ -15,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ReferPage {
 
+  
+  BackgroundImages = images.default;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { SingleCategoryPage } from '../single-category/single-category';
-import { AngularFireAuth } from '@angular/fire/auth';
-import { AngularFireStorage } from '@angular/fire/storage';
 import { AngularFirestore } from '@angular/fire/firestore';
-
+import * as images from '../../app/imageService';
 /**
  * Generated class for the CategoriesPage page.
  *
@@ -24,12 +22,11 @@ export class CategoriesPage {
   CategoryData =[]
   mainuser : any
   sub
+  backgroundImages = images.default
 
   constructor(public navCtrl: NavController, 
     public navParams: NavParams, 
     public http: HttpClient,
-    public afAuth : AngularFireAuth,
-    public afStore : AngularFireStorage,
     private afs : AngularFirestore
     ) {
       let DumpData = afs.collection(`categories`);

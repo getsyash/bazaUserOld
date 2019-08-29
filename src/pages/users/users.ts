@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import { HttpClient } from '@angular/common/http';
+import * as images from '../../app/imageService';
+
 /**
  * Generated class for the UsersPage page.
  *
@@ -17,6 +19,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UsersPage {
 
+  BackgroundImages = images.default;
   image: any;
   users: any; 
   constructor(public userService : UserService,public navCtrl: NavController, public navParams: NavParams, public http : HttpClient) {

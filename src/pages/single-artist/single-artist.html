@@ -44,8 +44,17 @@
       <ion-col [innerHTML]="data.willingtocome"></ion-col>
     </ion-row>
   </ion-list>
+
+  <ion-row>
+    <ion-col>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.startDate" placeholder="Event Start Date"></ion-datetime>
+    </ion-col>
+    <ion-col>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.endDate" min={{bookingDates.startDate}} placeholder="Event End Date"></ion-datetime>
+    </ion-col>
+  </ion-row>
   <ion-buttons>
-    <button class="BookingButton">
+    <button class="BookingButton" (click)="bookNow()">
       Schedule booking
     </button>
   </ion-buttons>

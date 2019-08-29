@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFirestore } from '@angular/fire/firestore';
 
+import * as images from '../../app/imageService';
 /**
  * Generated class for the SingleCategoryPage page.
  *
@@ -17,6 +18,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 
 export class SingleCategoryPage {
+  
+  BackgroundImages
   category : any
   Userdata : any
   SearchBar : any
@@ -28,6 +31,8 @@ export class SingleCategoryPage {
         console.log(this.Userdata)
       }
     )
+     this.BackgroundImages = images.default;
+     console.log(this.BackgroundImages.logo)
   }
 
   ionViewDidLoad() {

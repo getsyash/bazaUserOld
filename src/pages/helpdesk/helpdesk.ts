@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import * as images from '../../app/imageService';
 /**
  * Generated class for the HelpdeskPage page.
  *
@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class HelpdeskPage {
 
 
+  BackgroundImages = images.default;
   todo = {}
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
