@@ -4,65 +4,14 @@ webpackJsonp([0],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpdeskPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_imageService__ = __webpack_require__(24);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the HelpdeskPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HelpdeskPage = (function () {
-    function HelpdeskPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_2__app_imageService__["a" /* default */];
-        this.todo = {};
-    }
-    HelpdeskPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HelpdeskPage');
-    };
-    HelpdeskPage.prototype.logForm = function () {
-    };
-    HelpdeskPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-helpdesk',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div>\n\n      <p>Thank you for reaching us ! </p>\n\n      <p>Please provide your information below </p>\n\n    </div>\n\n  </ion-list>\n\n\n\n  <form (ngSubmit)="logForm()">\n\n      <ion-item>\n\n        <ion-label>Slot ID</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.slotID" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Category</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.category" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Subject</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.subject" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Querry/Issue</ion-label>\n\n        <ion-textarea [(ngModel)]="todo.issue" name="description"></ion-textarea>\n\n      </ion-item>\n\n      <button ion-button type="submit" block>Submit</button>\n\n    </form>\n\n\n\n    <ion-list>\n\n      <div>\n\n        <h2 style="text-align: center">Contact Us </h2>\n\n        <p>info@baza.com</p>\n\n        <p>040-123456789(Mon - Fri 11am - 9pm)</p>\n\n      </div>\n\n    </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], HelpdeskPage);
-    return HelpdeskPage;
-}());
-
-//# sourceMappingURL=helpdesk.js.map
-
-/***/ }),
-
-/***/ 137:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoriesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__single_category_single_category__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__single_category_single_category__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_firestore__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_imageService__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__single_artist_single_artist__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__single_artist_single_artist__ = __webpack_require__(137);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -151,7 +100,7 @@ var CategoriesPage = (function () {
 
 /***/ }),
 
-/***/ 138:
+/***/ 137:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -261,6 +210,57 @@ var SingleArtistPage = (function () {
 
 /***/ }),
 
+/***/ 141:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpdeskPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_imageService__ = __webpack_require__(24);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the HelpdeskPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HelpdeskPage = (function () {
+    function HelpdeskPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_2__app_imageService__["a" /* default */];
+        this.todo = {};
+    }
+    HelpdeskPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HelpdeskPage');
+    };
+    HelpdeskPage.prototype.logForm = function () {
+    };
+    HelpdeskPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-helpdesk',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div>\n\n      <p>Thank you for reaching us ! </p>\n\n      <p>Please provide your information below </p>\n\n    </div>\n\n  </ion-list>\n\n\n\n  <form (ngSubmit)="logForm()">\n\n      <ion-item>\n\n        <ion-label>Slot ID</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.slotID" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Category</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.category" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Subject</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.subject" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Querry/Issue</ion-label>\n\n        <ion-textarea [(ngModel)]="todo.issue" name="description"></ion-textarea>\n\n      </ion-item>\n\n      <button ion-button type="submit" block>Submit</button>\n\n    </form>\n\n\n\n    <ion-list>\n\n      <div>\n\n        <h2 style="text-align: center">Contact Us </h2>\n\n        <p>info@baza.com</p>\n\n        <p>040-123456789(Mon - Fri 11am - 9pm)</p>\n\n      </div>\n\n    </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], HelpdeskPage);
+    return HelpdeskPage;
+}());
+
+//# sourceMappingURL=helpdesk.js.map
+
+/***/ }),
+
 /***/ 142:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -340,7 +340,7 @@ var UserProfilePage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_userService__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categories_categories__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categories_categories__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_register__ = __webpack_require__(319);
@@ -504,13 +504,13 @@ var Images = {
 
 var map = {
 	"../pages/bookings/bookings.module": [
-		248
+		256
 	],
 	"../pages/categories/categories.module": [
-		250
+		248
 	],
 	"../pages/feedback/feedback.module": [
-		256
+		253
 	],
 	"../pages/helpdesk/helpdesk.module": [
 		255
@@ -519,13 +519,13 @@ var map = {
 		258
 	],
 	"../pages/single-artist/single-artist.module": [
-		260
+		263
 	],
 	"../pages/single-category/single-category.module": [
-		261
+		260
 	],
 	"../pages/user-profile/user-profile.module": [
-		263
+		261
 	],
 	"../pages/users/users.module": [
 		262
@@ -552,101 +552,10 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookingsPageModule", function() { return BookingsPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bookings__ = __webpack_require__(249);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var BookingsPageModule = (function () {
-    function BookingsPageModule() {
-    }
-    BookingsPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__bookings__["a" /* BookingsPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__bookings__["a" /* BookingsPage */]),
-            ],
-        })
-    ], BookingsPageModule);
-    return BookingsPageModule;
-}());
-
-//# sourceMappingURL=bookings.module.js.map
-
-/***/ }),
-
-/***/ 249:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookingsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpdesk_helpdesk__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_imageService__ = __webpack_require__(24);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the BookingsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var BookingsPage = (function () {
-    function BookingsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_3__app_imageService__["a" /* default */];
-    }
-    BookingsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad BookingsPage');
-    };
-    BookingsPage.prototype.openHelpPage = function () {
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_0__helpdesk_helpdesk__["a" /* HelpdeskPage */]);
-    };
-    BookingsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-bookings',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <h2>My Bookings</h2>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list style="text-align: center; color: black">\n\n    <p>If you have any queries about your bookings,<br>please feel freeto contact us through <br>\n\n    <span (click)="openHelpPage()">Help Desk</span> \n\n    <hr>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */]])
-    ], BookingsPage);
-    return BookingsPage;
-}());
-
-//# sourceMappingURL=bookings.js.map
-
-/***/ }),
-
-/***/ 250:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoriesPageModule", function() { return CategoriesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories__ = __webpack_require__(136);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -676,12 +585,12 @@ var CategoriesPageModule = (function () {
 
 /***/ }),
 
-/***/ 251:
+/***/ 249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingleCategoryPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__single_artist_single_artist__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__single_artist_single_artist__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_firestore__ = __webpack_require__(57);
@@ -764,45 +673,7 @@ var SingleCategoryPage = (function () {
 
 /***/ }),
 
-/***/ 255:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpdeskPageModule", function() { return HelpdeskPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpdesk__ = __webpack_require__(136);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var HelpdeskPageModule = (function () {
-    function HelpdeskPageModule() {
-    }
-    HelpdeskPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */]),
-            ],
-        })
-    ], HelpdeskPageModule);
-    return HelpdeskPageModule;
-}());
-
-//# sourceMappingURL=helpdesk.module.js.map
-
-/***/ }),
-
-/***/ 256:
+/***/ 253:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -810,7 +681,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedbackPageModule", function() { return FeedbackPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feedback__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feedback__ = __webpack_require__(254);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -840,7 +711,7 @@ var FeedbackPageModule = (function () {
 
 /***/ }),
 
-/***/ 257:
+/***/ 254:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -885,6 +756,135 @@ var FeedbackPage = (function () {
 }());
 
 //# sourceMappingURL=feedback.js.map
+
+/***/ }),
+
+/***/ 255:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpdeskPageModule", function() { return HelpdeskPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpdesk__ = __webpack_require__(141);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var HelpdeskPageModule = (function () {
+    function HelpdeskPageModule() {
+    }
+    HelpdeskPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */]),
+            ],
+        })
+    ], HelpdeskPageModule);
+    return HelpdeskPageModule;
+}());
+
+//# sourceMappingURL=helpdesk.module.js.map
+
+/***/ }),
+
+/***/ 256:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookingsPageModule", function() { return BookingsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bookings__ = __webpack_require__(257);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var BookingsPageModule = (function () {
+    function BookingsPageModule() {
+    }
+    BookingsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__bookings__["a" /* BookingsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__bookings__["a" /* BookingsPage */]),
+            ],
+        })
+    ], BookingsPageModule);
+    return BookingsPageModule;
+}());
+
+//# sourceMappingURL=bookings.module.js.map
+
+/***/ }),
+
+/***/ 257:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookingsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpdesk_helpdesk__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_imageService__ = __webpack_require__(24);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the BookingsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var BookingsPage = (function () {
+    function BookingsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_3__app_imageService__["a" /* default */];
+    }
+    BookingsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BookingsPage');
+    };
+    BookingsPage.prototype.openHelpPage = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_0__helpdesk_helpdesk__["a" /* HelpdeskPage */]);
+    };
+    BookingsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
+            selector: 'page-bookings',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <h2>My Bookings</h2>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list style="text-align: center; color: black">\n\n    <p>If you have any queries about your bookings,<br>please feel freeto contact us through <br>\n\n    <span (click)="openHelpPage()">Help Desk</span> \n\n    <hr>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */]])
+    ], BookingsPage);
+    return BookingsPage;
+}());
+
+//# sourceMappingURL=bookings.js.map
 
 /***/ }),
 
@@ -979,48 +979,10 @@ var ReferPage = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleArtistPageModule", function() { return SingleArtistPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_artist__ = __webpack_require__(138);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var SingleArtistPageModule = (function () {
-    function SingleArtistPageModule() {
-    }
-    SingleArtistPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */]),
-            ],
-        })
-    ], SingleArtistPageModule);
-    return SingleArtistPageModule;
-}());
-
-//# sourceMappingURL=single-artist.module.js.map
-
-/***/ }),
-
-/***/ 261:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleCategoryPageModule", function() { return SingleCategoryPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_category__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_category__ = __webpack_require__(249);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1047,6 +1009,44 @@ var SingleCategoryPageModule = (function () {
 }());
 
 //# sourceMappingURL=single-category.module.js.map
+
+/***/ }),
+
+/***/ 261:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserProfilePageModule", function() { return UserProfilePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_profile__ = __webpack_require__(142);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var UserProfilePageModule = (function () {
+    function UserProfilePageModule() {
+    }
+    UserProfilePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__user_profile__["a" /* UserProfilePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__user_profile__["a" /* UserProfilePage */]),
+            ],
+        })
+    ], UserProfilePageModule);
+    return UserProfilePageModule;
+}());
+
+//# sourceMappingURL=user-profile.module.js.map
 
 /***/ }),
 
@@ -1093,10 +1093,10 @@ var UsersPageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserProfilePageModule", function() { return UserProfilePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleArtistPageModule", function() { return SingleArtistPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_profile__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_artist__ = __webpack_require__(137);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1106,23 +1106,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var UserProfilePageModule = (function () {
-    function UserProfilePageModule() {
+var SingleArtistPageModule = (function () {
+    function SingleArtistPageModule() {
     }
-    UserProfilePageModule = __decorate([
+    SingleArtistPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__user_profile__["a" /* UserProfilePage */],
+                __WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__user_profile__["a" /* UserProfilePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */]),
             ],
         })
-    ], UserProfilePageModule);
-    return UserProfilePageModule;
+    ], SingleArtistPageModule);
+    return SingleArtistPageModule;
 }());
 
-//# sourceMappingURL=user-profile.module.js.map
+//# sourceMappingURL=single-artist.module.js.map
 
 /***/ }),
 
@@ -1395,15 +1395,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_login_login__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_notifications_notifications__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_register_register__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_categories_categories_module__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feedback_feedback_module__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_categories_categories_module__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feedback_feedback_module__ = __webpack_require__(253);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_helpdesk_helpdesk_module__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_refer_refer_module__ = __webpack_require__(258);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_single_artist_single_artist_module__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_single_category_single_category_module__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_single_artist_single_artist_module__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_single_category_single_category_module__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_users_users_module__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_user_profile_user_profile_module__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_bookings_bookings_module__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_user_profile_user_profile_module__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_bookings_bookings_module__ = __webpack_require__(256);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1471,15 +1471,15 @@ var AppModule = (function () {
                     autoFocusAssist: false
                 }, {
                     links: [
-                        { loadChildren: '../pages/bookings/bookings.module#BookingsPageModule', name: 'BookingsPage', segment: 'bookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categories/categories.module#CategoriesPageModule', name: 'CategoriesPage', segment: 'categories', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/helpdesk/helpdesk.module#HelpdeskPageModule', name: 'HelpdeskPage', segment: 'helpdesk', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/feedback/feedback.module#FeedbackPageModule', name: 'FeedbackPage', segment: 'feedback', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/helpdesk/helpdesk.module#HelpdeskPageModule', name: 'HelpdeskPage', segment: 'helpdesk', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/bookings/bookings.module#BookingsPageModule', name: 'BookingsPage', segment: 'bookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/refer/refer.module#ReferPageModule', name: 'ReferPage', segment: 'refer', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/single-artist/single-artist.module#SingleArtistPageModule', name: 'SingleArtistPage', segment: 'single-artist', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/single-category/single-category.module#SingleCategoryPageModule', name: 'SingleCategoryPage', segment: 'single-category', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/user-profile/user-profile.module#UserProfilePageModule', name: 'UserProfilePage', segment: 'user-profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/users/users.module#UsersPageModule', name: 'UsersPage', segment: 'users', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/user-profile/user-profile.module#UserProfilePageModule', name: 'UserProfilePage', segment: 'user-profile', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/single-artist/single-artist.module#SingleArtistPageModule', name: 'SingleArtistPage', segment: 'single-artist', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["a" /* IonicStorageModule */].forRoot({
@@ -1920,12 +1920,12 @@ var WeatherProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__ = __webpack_require__(306);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_categories_categories__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_categories_categories__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_notifications_notifications__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_refer_refer__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_feedback_feedback__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_bookings_bookings__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_helpdesk_helpdesk__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_feedback_feedback__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_bookings_bookings__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_helpdesk_helpdesk__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__imageService__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1961,7 +1961,7 @@ var MyApp = (function () {
         this.keyboard = keyboard;
         this.afAuth = afAuth;
         this.backgroundImages = __WEBPACK_IMPORTED_MODULE_15__imageService__["a" /* default */];
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_9__pages_categories_categories__["a" /* CategoriesPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_8__pages_login_login__["a" /* LoginPage */];
         this.initializeApp();
         this.appMenuItems = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_9__pages_categories_categories__["a" /* CategoriesPage */], icon: 'home' },
@@ -2006,19 +2006,15 @@ var MyApp = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* Nav */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* Nav */]) === "function" && _a || Object)
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\app\app.html"*/'<ion-menu side="left" id="authenticated" [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar class="user-profile">\n\n\n\n      <ion-grid>\n\n        <ion-row>\n\n              <div class="user-avatar" menuClose (click)="openProfile()" >\n\n                <img src="{{backgroundImages.avatar}}">\n\n              </div>\n\n            <h2 ion-text class="no-margin bold text-white" [innerHTML]="username"></h2>\n\n        </ion-row>\n\n      </ion-grid>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content color="primary" class="SideToggle">\n\n    <ion-list class="user-list">\n\n      <button ion-item menuClose class="text-1x" *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon name="{{menuItem.icon}}" color="#fff"></ion-icon>\n\n        <span ion-text color="primary">{{menuItem.title}}</span>\n\n      </button>\n\n      <button ion-item menuClose class="text-1x"(click)="logout()">\n\n          <ion-icon name="log-out" color="#fff"></ion-icon>\n\n        <span ion-text color="primary">Log Out</span>\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__userService__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__["a" /* Keyboard */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__["a" /* AngularFireAuth */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__userService__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__userService__["a" /* UserService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__["a" /* Keyboard */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__["a" /* Keyboard */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__["a" /* AngularFireAuth */]) === "function" && _g || Object])
     ], MyApp);
     return MyApp;
+    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=app.component.js.map
