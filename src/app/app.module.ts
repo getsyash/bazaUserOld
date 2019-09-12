@@ -1,4 +1,3 @@
-import { SetUser } from './setUser';
 import { UserService } from './userService';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -48,7 +47,7 @@ import { BookingsPageModule } from '../pages/bookings/bookings.module';
     MyApp,
     LoginPage,
     NotificationsPage,
-    RegisterPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -92,8 +91,7 @@ import { BookingsPageModule } from '../pages/bookings/bookings.module';
     TripService,
     WeatherProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    UserService,
-    SetUser
+    UserService
   ]
 })
 

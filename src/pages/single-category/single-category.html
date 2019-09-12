@@ -15,13 +15,14 @@
 
 
 <ion-content padding>
-  <ion-item style="margin-bottom: 15px; ">
-    <ion-input type="text" placeholder="Search Artist"></ion-input>
-  </ion-item>
-  <ion-list *ngFor="let user of Userdata">
+  <ion-list style="display: flex;align-items: center; padding-right: 1em">
+      <ion-searchbar [(ngModel)]="searchArtist" (ionChange)="setAtrist($event)" placeholder="Search Artists"></ion-searchbar>
+      <ion-icon name="options" (click)="filter()"></ion-icon>
+  </ion-list>
+  <ion-list *ngFor="let user of Userdata" style="margin-top: 15px">
       <div (click)="openUser(user)" class="ion-row UserList-{{user.username}}">
         <div class="col col-1"><ion-avatar><img src="../../assets/img/user/avatar.jpeg"></ion-avatar></div>
-        <div class="col col-2"><h1 [innerHTML]="user.username"></h1><span [innerHTML]="user.teamname"></span><span [innerHTML]="user.languages"></span></div>
+        <div class="col col-2"><h1 [innerHTML]="user.FirstName"></h1><span [innerHTML]="user.teamname"></span><span [innerHTML]="user.languages"></span></div>
       </div>
   </ion-list>
 </ion-content>

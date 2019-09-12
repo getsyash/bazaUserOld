@@ -22,6 +22,7 @@ export class UsersPage {
   BackgroundImages = images.default;
   image: any;
   users: any; 
+  searchArtist
   constructor(public userService : UserService,public navCtrl: NavController, public navParams: NavParams, public http : HttpClient) {
 
   }
@@ -42,6 +43,9 @@ export class UsersPage {
       }
     );
 
+  }
+  setAtrist(){
+    
   }
 
 

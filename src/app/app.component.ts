@@ -31,9 +31,10 @@ export interface MenuItem {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   backgroundImages = images.default;
-  rootPage: any = LoginPage;
+  rootPage: any = CategoriesPage;
   BackgroundImages 
   appMenuItems: Array<MenuItem>;
+  username 
   constructor(
     public UserService : UserService,
     public platform: Platform,
@@ -44,13 +45,13 @@ export class MyApp {
   ) {
     this.initializeApp();
     this.appMenuItems = [
-      {title: 'Home', component: CategoriesPage, icon: ''},
-      {title:'My Profile', component: UserProfilePage, icon: ''},
-      {title: 'My Booking', component: BookingsPage, icon: ''},
-      {title: 'Notifications', component: NotificationsPage, icon: ''},
-      {title: 'Refer a Friend', component: ReferPage, icon: ''},
-      {title: 'Help Desk', component: HelpdeskPage, icon: ''},
-      {title: 'Feed Back', component: FeedbackPage, icon: ''},      
+      {title: 'Home', component: CategoriesPage, icon: 'home'},
+      {title:'My Profile', component: UserProfilePage, icon: 'document'},
+      {title: 'My Booking', component: BookingsPage, icon: 'bookmark'},
+      {title: 'Notifications', component: NotificationsPage, icon: 'alert'},
+      {title: 'Refer a Friend', component: ReferPage, icon: 'people'},
+      {title: 'Help Desk', component: HelpdeskPage, icon: 'help-buoy'},
+      {title: 'Feed Back', component: FeedbackPage, icon: 'paper'},      
     ];
 
     platform.ready().then(() => {
@@ -58,6 +59,7 @@ export class MyApp {
       statusBar.styleDefault();
 
   });
+
 
 
   }
@@ -81,6 +83,7 @@ export class MyApp {
     });
   }
 
+
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
@@ -96,5 +99,7 @@ export class MyApp {
   openProfile(){
     this.nav.setRoot(UserProfilePage);
   }
+
+
 
 }

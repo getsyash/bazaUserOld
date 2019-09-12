@@ -9,12 +9,22 @@
 </ion-header>
 
 <ion-content padding class="animated fadeIn common-bg">
-    <ion-item style="margin-bottom: 15px; ">
-      <ion-input type="text" placeholder="Search Category"></ion-input>
-    </ion-item>
-  <ion-list style="column-count: 2">
+  <ion-searchbar [(ngModel)]="searchCategory" (ionChange)="setCategories($event)" placeholder="Search Category"></ion-searchbar>
+  <ion-label style="margin-left: 1em;  font-size: 1.35em;"><ion-icon name="apps" style="margin-right: 1em"></ion-icon>Categories</ion-label>
+  <ion-list style="margin-top: 15px; text-align: center">
     <div class="ListItem"  *ngFor ="let user of CategoryData" id="Category-{{user.name}}" (click)="openCategory(user)" >
-      <ion-avatar><img src="{{user.img}}"></ion-avatar>
+      <ion-thumbnail><img src="{{user.img}}"></ion-thumbnail>
+      <p class="" style="text-align: center">{{user.name}}</p>
+    </div>
+  </ion-list>
+  <ion-label style="margin-left: 1em;  font-size: 1.35em;"><ion-icon name="flame" style="margin-right: 1em"></ion-icon>Popular</ion-label>
+  <ion-list style="margin-top: 15px">
+    <div class="ListItem"  *ngFor ="let user of Userdata" id="User-{{user.name}}" (click)="openUser(user)" >
+      <ion-thumbnail>
+        <img *ngIf="!user.img" class="posterThumbNail" src="../../assets/img/avatar.jpeg" />
+        <img *ngIf="user.img" class="posterThumbNail" [src]="user.img" >
+      </ion-thumbnail>
+      <p class="" style="text-align: center">{{user.FirstName}} | {{user.teamname}}</p>
     </div>
   </ion-list>
 </ion-content>

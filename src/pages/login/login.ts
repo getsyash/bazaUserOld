@@ -6,7 +6,6 @@ import {RegisterPage} from "../register/register";
 import { AngularFireAuth } from '@angular/fire/auth';
 import firebase from 'firebase';
 import * as images from '../../app/imageService';
-import * as UserData from '../../app/setUser';
 
 @Component({
   selector: 'page-login',
@@ -25,6 +24,7 @@ export class LoginPage {
   }; 
   VerificationId : string = '';
   public recaptchaVerifier:firebase.auth.RecaptchaVerifier;
+  UserService: any;
   constructor(
     public user : UserService ,
     public alertCtrl:AlertController ,
@@ -32,7 +32,6 @@ export class LoginPage {
     public nav: NavController, 
     public forgotCtrl: AlertController, 
     public menu: MenuController, 
-    public UserData : UserData.SetUser,
     public toastCtrl: ToastController) {
 
     this.menu.swipeEnable(false);
@@ -55,8 +54,10 @@ export class LoginPage {
     firebase.auth().signInWithEmailAndPassword(this.email,this.password).then((user)=>{
       console.log(user);
       this.nav.setRoot(CategoriesPage);
-      this.UserData.SetUser(user);
-      console.log(this.UserData.getuser);
+      this.user.setUser({
+        uid : user.user.uid
+      })
+      console.log(this.user.getUID())
     }).catch((err)=>{
       console.log(err)
     })

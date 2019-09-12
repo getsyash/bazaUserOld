@@ -11,8 +11,8 @@
     </button>
     <img class="ArtistImage" src="../../assets/img/user/avatar.jpeg" style="position: relative;right: 10%;">
     <ion-row class="ArtistDetails"> 
-      <ion-col class="ArtistName"><span [innerHTML]="data.Name"></span></ion-col>
-      <ion-col class="ArtistTitle"><span [innerHTML]="data.title"></span></ion-col>
+      <ion-col class="ArtistName"><span [innerHTML]="data.FirstName"></span></ion-col>
+      <ion-col class="ArtistTitle"><span [innerHTML]="data.teamname"></span></ion-col>
     </ion-row>
   </ion-navbar>
 </ion-header>
@@ -20,7 +20,7 @@
 
   <ion-list>
     <div style="text-align: center"><h3>About</h3></div>
-    <p [innerHTML]="data.aboutgroup"></p>
+    <p [innerHTML]="data.aboutgroup" style="text-align: center"></p>
   </ion-list>
   <ion-list class="HighlightItems">
     <ion-row>
@@ -47,21 +47,21 @@
 
   <ion-row>
     <ion-col>
-      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.startDate" placeholder="Event Start Date"></ion-datetime>
+      <ion-datetime displayFormat="DD/MMM/YYYY" min={{thisdate}} [(ngModel)]="startDate" placeholder="Event Start Date" ></ion-datetime>
     </ion-col>
     <ion-col>
-      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.endDate" min={{bookingDates.startDate}} placeholder="Event End Date"></ion-datetime>
+      <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="endDate" min={{startDate}} placeholder="Event End Date"></ion-datetime>
     </ion-col>
     <ion-item>
       <ion-label>Event Location</ion-label>
-      <ion-select placeholder="Select Event location">
-        <ion-option value="10000">Local</ion-option>
-        <ion-option value="15000">Non-Local</ion-option>
+      <ion-select  [(ngModel)]="location">
+        <ion-option value="Local">Local</ion-option>
+        <ion-option value="Non-Local">Non-Local</ion-option>
       </ion-select>
     </ion-item>
   </ion-row>
   <ion-buttons>
-    <button class="BookingButton" (click)="bookNow()">
+    <button class="BookingButton" (click)="payWithRazor()">
       Schedule booking
     </button>
   </ion-buttons>
