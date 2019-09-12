@@ -31,7 +31,7 @@ export interface MenuItem {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   backgroundImages = images.default;
-  rootPage: any = CategoriesPage;
+  rootPage: any = LoginPage;
   BackgroundImages 
   appMenuItems: Array<MenuItem>;
   username 
