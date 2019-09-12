@@ -32,6 +32,14 @@ module.exports = [
     "clobbers": [
       "navigator.splashscreen"
     ]
+  },
+  {
+    "id": "cordova-plugin-stripe.stripe",
+    "file": "plugins/cordova-plugin-stripe/www/CordovaStripe.js",
+    "pluginId": "cordova-plugin-stripe",
+    "clobbers": [
+      "cordova.plugins.stripe"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -42,7 +50,8 @@ module.exports.metadata =
   "cordova-plugin-statusbar": "2.4.3",
   "cordova-plugin-whitelist": "1.3.4",
   "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-splashscreen": "4.1.0"
+  "cordova-plugin-splashscreen": "4.1.0",
+  "cordova-plugin-stripe": "1.5.3"
 };
 // BOTTOM OF METADATA
 });

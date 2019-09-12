@@ -252,6 +252,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: "CordovaLib"))
+    compile "com.stripe:stripe-android:4.1.2"
     // SUB-PROJECT DEPENDENCIES END
 }
 

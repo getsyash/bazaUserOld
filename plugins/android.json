@@ -24,6 +24,9 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.baza.app"
+    },
+    "cordova-plugin-stripe": {
+      "PACKAGE_NAME": "com.baza.app"
     }
   },
   "dependent_plugins": {}
