@@ -40,7 +40,7 @@ var HelpdeskPage = (function () {
     };
     HelpdeskPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-helpdesk',template:/*ion-inline-start:"D:\app\baza\src\pages\helpdesk\helpdesk.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div>\n\n      <p>Thank you for reaching us ! </p>\n\n      <p>Please provide your information below </p>\n\n    </div>\n\n  </ion-list>\n\n\n\n  <form (ngSubmit)="logForm()">\n\n      <ion-item>\n\n        <ion-label>Slot ID</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.slotID" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Category</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.category" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Subject</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.subject" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Querry/Issue</ion-label>\n\n        <ion-textarea [(ngModel)]="todo.issue" name="description"></ion-textarea>\n\n      </ion-item>\n\n      <button ion-button type="submit" block>Submit</button>\n\n    </form>\n\n\n\n    <ion-list>\n\n      <div>\n\n        <h2 style="text-align: center">Contact Us </h2>\n\n        <p>info@baza.com</p>\n\n        <p>040-123456789(Mon - Fri 11am - 9pm)</p>\n\n      </div>\n\n    </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\helpdesk\helpdesk.html"*/,
+            selector: 'page-helpdesk',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div>\n\n      <p>Thank you for reaching us ! </p>\n\n      <p>Please provide your information below </p>\n\n    </div>\n\n  </ion-list>\n\n\n\n  <form (ngSubmit)="logForm()">\n\n      <ion-item>\n\n        <ion-label>Slot ID</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.slotID" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Category</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.category" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Subject</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.subject" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Querry/Issue</ion-label>\n\n        <ion-textarea [(ngModel)]="todo.issue" name="description"></ion-textarea>\n\n      </ion-item>\n\n      <button ion-button type="submit" block>Submit</button>\n\n    </form>\n\n\n\n    <ion-list>\n\n      <div>\n\n        <h2 style="text-align: center">Contact Us </h2>\n\n        <p>info@baza.com</p>\n\n        <p>040-123456789(Mon - Fri 11am - 9pm)</p>\n\n      </div>\n\n    </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], HelpdeskPage);
@@ -107,7 +107,7 @@ var UserProfilePage = (function () {
     };
     UserProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-user-profile',template:/*ion-inline-start:"D:\app\baza\src\pages\user-profile\user-profile.html"*/'<!--\n\n  Generated template for the UserProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <ion-col><h3>My Profile</h3></ion-col>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <button ion-button clear block (click)="updateProfile()">Update Profile</button>\n\n  <ion-item>\n\n    <ion-label>Name</ion-label>\n\n    <ion-input [(ngModel)]="profile.name"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label>Phone</ion-label>\n\n      <ion-input [(ngModel)]="profile.phone"></ion-input>\n\n    </ion-item>\n\n    \n\n  <ion-item>\n\n      <ion-label>Email</ion-label>\n\n      <ion-input [(ngModel)]="profile.email"></ion-input>\n\n    </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\user-profile\user-profile.html"*/,
+            selector: 'page-user-profile',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\user-profile\user-profile.html"*/'<!--\n\n  Generated template for the UserProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <ion-col><h3>My Profile</h3></ion-col>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <button ion-button clear block (click)="updateProfile()">Update Profile</button>\n\n  <ion-item>\n\n    <ion-label>Name</ion-label>\n\n    <ion-input [(ngModel)]="profile.name"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label>Phone</ion-label>\n\n      <ion-input [(ngModel)]="profile.phone"></ion-input>\n\n    </ion-item>\n\n    \n\n  <ion-item>\n\n      <ion-label>Email</ion-label>\n\n      <ion-input [(ngModel)]="profile.email"></ion-input>\n\n    </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\user-profile\user-profile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
@@ -237,7 +237,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"D:\app\baza\src\pages\login\login.html"*/'<!-- -->\n\n<ion-content padding class="animated fadeIn login auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding-horizontal text-center class="animated fadeInDown">\n\n      <div class="logo"></div>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form" style="padding-top: 30px;padding-bottom: 20px;">\n\n      <ion-item>\n\n        <ion-input type="text" [(ngModel)]="email" name="email" placeholder="Email"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n    </form>\n\n    <div>\n\n      <button ion-button icon-start block color="dark" tappable (click)="login()" class="LoginButton">\n\n        <ion-icon name="log-in"></ion-icon>\n\n        Login\n\n      </button>\n\n      <div id="recaptcha-container"></div>\n\n\n\n\n\n    </div>\n\n\n\n\n\n    <!-- Other links -->\n\n    <div text-center margin-top>\n\n      <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>\n\n    </div>\n\n\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\login\login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\login\login.html"*/'<!-- -->\n\n<ion-content padding class="animated fadeIn login auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding-horizontal text-center class="animated fadeInDown">\n\n      <div class="logo"></div>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form" style="padding-top: 30px;padding-bottom: 20px;">\n\n      <ion-item>\n\n        <ion-input type="text" [(ngModel)]="email" name="email" placeholder="Email"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n    </form>\n\n    <div>\n\n      <button ion-button icon-start block color="dark" tappable (click)="login()" class="LoginButton">\n\n        <ion-icon name="log-in"></ion-icon>\n\n        Login\n\n      </button>\n\n      <div id="recaptcha-container"></div>\n\n\n\n\n\n    </div>\n\n\n\n\n\n    <!-- Other links -->\n\n    <div text-center margin-top>\n\n      <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>\n\n    </div>\n\n\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__app_userService__["a" /* UserService */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["a" /* AlertController */],
@@ -325,10 +325,10 @@ var map = {
 		258
 	],
 	"../pages/refer/refer.module": [
-		260
+		259
 	],
 	"../pages/single-artist/single-artist.module": [
-		259
+		261
 	],
 	"../pages/single-category/single-category.module": [
 		262
@@ -436,7 +436,7 @@ var BookingsPage = (function () {
     };
     BookingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-bookings',template:/*ion-inline-start:"D:\app\baza\src\pages\bookings\bookings.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <h2>My Bookings</h2>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list style="text-align: center; color: black">\n\n    <p>If you have any queries about your bookings,<br>please feel freeto contact us through <br>\n\n    <span (click)="openHelpPage()">Help Desk</span> \n\n    <hr>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\bookings\bookings.html"*/,
+            selector: 'page-bookings',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <h2>My Bookings</h2>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list style="text-align: center; color: black">\n\n    <p>If you have any queries about your bookings,<br>please feel freeto contact us through <br>\n\n    <span (click)="openHelpPage()">Help Desk</span> \n\n    <hr>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */]])
     ], BookingsPage);
@@ -538,7 +538,7 @@ var SingleCategoryPage = (function () {
     };
     SingleCategoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-single-category',template:/*ion-inline-start:"D:\app\baza\src\pages\single-category\single-category.html"*/'<!--\n\n  Generated template for the SingleCategoryPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-item style="margin-bottom: 15px; ">\n\n    <ion-input type="text" placeholder="Search Artist"></ion-input>\n\n  </ion-item>\n\n  <ion-list *ngFor="let user of Userdata">\n\n      <div (click)="openUser(user)" class="ion-row UserList-{{user.Name}}">\n\n        <div class="col col-1"><ion-avatar><img src="{{user.img}}"></ion-avatar></div>\n\n        <div class="col col-2"><h1 [innerHTML]="user.Name"></h1><span [innerHTML]="user.title"></span><span [innerHTML]="user.languages"></span></div>\n\n      </div>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\single-category\single-category.html"*/,
+            selector: 'page-single-category',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-category\single-category.html"*/'<!--\n\n  Generated template for the SingleCategoryPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-item style="margin-bottom: 15px; ">\n\n    <ion-input type="text" placeholder="Search Artist"></ion-input>\n\n  </ion-item>\n\n  <ion-list *ngFor="let user of Userdata">\n\n      <div (click)="openUser(user)" class="ion-row UserList-{{user.username}}">\n\n        <div class="col col-1"><ion-avatar><img src="../../assets/img/user/avatar.jpeg"></ion-avatar></div>\n\n        <div class="col col-2"><h1 [innerHTML]="user.username"></h1><span [innerHTML]="user.teamname"></span><span [innerHTML]="user.languages"></span></div>\n\n      </div>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-category\single-category.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_fire_firestore__["a" /* AngularFirestore */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */]])
     ], SingleCategoryPage);
@@ -556,8 +556,8 @@ var SingleCategoryPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingleArtistPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_imageService__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__categories_categories__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_stripe_ngx__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_imageService__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -578,28 +578,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var SingleArtistPage = (function () {
-    function SingleArtistPage(navCtrl, navParams) {
+    function SingleArtistPage(stripe, navCtrl, navParams) {
+        this.stripe = stripe;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_2__app_imageService__["a" /* default */];
+        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_3__app_imageService__["a" /* default */];
         this.bookingDates = {};
         this.data = this.navParams.get('data');
         console.log(this.data);
     }
+    //
     SingleArtistPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad SingleArtistPage');
     };
     SingleArtistPage.prototype.bookNow = function () {
         console.log(this.bookingDates);
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__categories_categories__["a" /* CategoriesPage */]);
+        //this.navCtrl.setRoot(CategoriesPage);
+        this.stripe.setPublishableKey('pk_test_beSgR1i72p1j2t8Fy89BvMLo004Zwc4DpO');
+        var card = {
+            number: '4242424242424242',
+            expMonth: 12,
+            expYear: 2020,
+            cvc: '220'
+        };
+        this.stripe.createCardToken(card)
+            .then(function (token) { return console.log(token.id); })
+            .catch(function (error) { return console.error(error); });
     };
     SingleArtistPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-single-artist',template:/*ion-inline-start:"D:\app\baza\src\pages\single-artist\single-artist.html"*/'<!--\n\n  Generated template for the SingleArtistPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img class="ArtistImage" src="{{data.img}}" style="position: relative;right: 10%;">\n\n    <ion-row class="ArtistDetails"> \n\n      <ion-col class="ArtistName"><span [innerHTML]="data.Name"></span></ion-col>\n\n      <ion-col class="ArtistTitle"><span [innerHTML]="data.title"></span></ion-col>\n\n    </ion-row>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div style="text-align: center"><h3>About</h3></div>\n\n    <p [innerHTML]="data.description"></p>\n\n  </ion-list>\n\n  <ion-list class="HighlightItems">\n\n    <ion-row>\n\n      <ion-col>Attend only</ion-col>\n\n      <ion-col [innerHTML]="data.Attend"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Remuneration</ion-col>\n\n      <ion-col><span [innerHTML]="data.remuneration" ></span><span>INR</span></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Language</ion-col>\n\n      <ion-col [innerHTML]="data.languages"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Total Events</ion-col>\n\n      <ion-col [innerHTML]="data.totalevents"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Willing to come</ion-col>\n\n      <ion-col [innerHTML]="data.willingtocome"></ion-col>\n\n    </ion-row>\n\n  </ion-list>\n\n\n\n  <ion-row>\n\n    <ion-col>\n\n      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.startDate" placeholder="Event Start Date"></ion-datetime>\n\n    </ion-col>\n\n    <ion-col>\n\n      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.endDate" min={{bookingDates.startDate}} placeholder="Event End Date"></ion-datetime>\n\n    </ion-col>\n\n  </ion-row>\n\n  <ion-buttons>\n\n    <button class="BookingButton" (click)="bookNow()">\n\n      Schedule booking\n\n    </button>\n\n  </ion-buttons>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\single-artist\single-artist.html"*/,
+            selector: 'page-single-artist',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-artist\single-artist.html"*/'<!--\n\n  Generated template for the SingleArtistPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img class="ArtistImage" src="../../assets/img/user/avatar.jpeg" style="position: relative;right: 10%;">\n\n    <ion-row class="ArtistDetails"> \n\n      <ion-col class="ArtistName"><span [innerHTML]="data.Name"></span></ion-col>\n\n      <ion-col class="ArtistTitle"><span [innerHTML]="data.title"></span></ion-col>\n\n    </ion-row>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div style="text-align: center"><h3>About</h3></div>\n\n    <p [innerHTML]="data.aboutgroup"></p>\n\n  </ion-list>\n\n  <ion-list class="HighlightItems">\n\n    <ion-row>\n\n      <ion-col>Attend only</ion-col>\n\n      <ion-col [innerHTML]="data.Attend"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Remuneration</ion-col>\n\n      <ion-col><span>INR </span><span [innerHTML]="data.remuneration" ></span></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Language</ion-col>\n\n      <ion-col [innerHTML]="data.languages"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Total Events</ion-col>\n\n      <ion-col [innerHTML]="data.totalevents"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Willing to come</ion-col>\n\n      <ion-col [innerHTML]="data.willingtocome"></ion-col>\n\n    </ion-row>\n\n  </ion-list>\n\n\n\n  <ion-row>\n\n    <ion-col>\n\n      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.startDate" placeholder="Event Start Date"></ion-datetime>\n\n    </ion-col>\n\n    <ion-col>\n\n      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="bookingDates.endDate" min={{bookingDates.startDate}} placeholder="Event End Date"></ion-datetime>\n\n    </ion-col>\n\n    <ion-item>\n\n      <ion-label>Event Location</ion-label>\n\n      <ion-select placeholder="Select Event location">\n\n        <ion-option value="10000">Local</ion-option>\n\n        <ion-option value="15000">Non-Local</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n  </ion-row>\n\n  <ion-buttons>\n\n    <button class="BookingButton" (click)="bookNow()">\n\n      Schedule booking\n\n    </button>\n\n  </ion-buttons>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-artist\single-artist.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_stripe_ngx__["a" /* Stripe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_stripe_ngx__["a" /* Stripe */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _c || Object])
     ], SingleArtistPage);
     return SingleArtistPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=single-artist.js.map
@@ -681,7 +694,7 @@ var FeedbackPage = (function () {
     };
     FeedbackPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-feedback',template:/*ion-inline-start:"D:\app\baza\src\pages\feedback\feedback.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 5% ">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\feedback\feedback.html"*/,
+            selector: 'page-feedback',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\feedback\feedback.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 5% ">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\feedback\feedback.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], FeedbackPage);
@@ -735,48 +748,10 @@ var HelpdeskPageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleArtistPageModule", function() { return SingleArtistPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_artist__ = __webpack_require__(252);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var SingleArtistPageModule = (function () {
-    function SingleArtistPageModule() {
-    }
-    SingleArtistPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */]),
-            ],
-        })
-    ], SingleArtistPageModule);
-    return SingleArtistPageModule;
-}());
-
-//# sourceMappingURL=single-artist.module.js.map
-
-/***/ }),
-
-/***/ 260:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReferPageModule", function() { return ReferPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refer__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refer__ = __webpack_require__(260);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -806,7 +781,7 @@ var ReferPageModule = (function () {
 
 /***/ }),
 
-/***/ 261:
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -843,7 +818,7 @@ var ReferPage = (function () {
     };
     ReferPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-refer',template:/*ion-inline-start:"D:\app\baza\src\pages\refer\refer.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\refer\refer.html"*/,
+            selector: 'page-refer',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\refer\refer.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\refer\refer.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], ReferPage);
@@ -851,6 +826,44 @@ var ReferPage = (function () {
 }());
 
 //# sourceMappingURL=refer.js.map
+
+/***/ }),
+
+/***/ 261:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleArtistPageModule", function() { return SingleArtistPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_artist__ = __webpack_require__(252);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SingleArtistPageModule = (function () {
+    function SingleArtistPageModule() {
+    }
+    SingleArtistPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__single_artist__["a" /* SingleArtistPage */]),
+            ],
+        })
+    ], SingleArtistPageModule);
+    return SingleArtistPageModule;
+}());
+
+//# sourceMappingURL=single-artist.module.js.map
 
 /***/ }),
 
@@ -1135,7 +1148,7 @@ var RegisterPage = (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_5__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"D:\app\baza\src\pages\register\register.html"*/'<!-- -->\n\n<ion-content class="auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding text-center>\n\n      <div class="logo"></div>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form">\n\n      <ion-item>\n\n        <ion-input type="text" [(ngModel)]="username" name="username" placeholder="Name"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Email ID"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="tel" [(ngModel)]="phonenumber" name="phonenumber" placeholder="Phone Number"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label>Gender</ion-label>\n\n        <ion-select [(ngModel)]="gender" name="gender">\n\n          <ion-option value="male">Male</ion-option>\n\n          <ion-option value="female">Female</ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n\n\n    </form>\n\n\n\n    <div margin-top>\n\n      <button ion-button block color="dark" tappable (click)="register()">\n\n        SIGN UP\n\n      </button>\n\n    </div>\n\n\n\n    <!-- Other links -->\n\n    <div text-center margin-top>\n\n      <span ion-text color="primary" tappable (click)="login()">I have an account</span>\n\n    </div>\n\n\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\register\register.html"*/
+            selector: 'page-register',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\register\register.html"*/'<!-- -->\n\n<ion-content class="auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding text-center>\n\n      <div class="logo"></div>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form">\n\n      <ion-item>\n\n        <ion-input type="text" [(ngModel)]="username" name="username" placeholder="Name"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Email ID"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="tel" [(ngModel)]="phonenumber" name="phonenumber" placeholder="Phone Number"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label>Gender</ion-label>\n\n        <ion-select [(ngModel)]="gender" name="gender">\n\n          <ion-option value="male">Male</ion-option>\n\n          <ion-option value="female">Female</ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n\n\n    </form>\n\n\n\n    <div margin-top>\n\n      <button ion-button block color="dark" tappable (click)="register()">\n\n        SIGN UP\n\n      </button>\n\n    </div>\n\n\n\n    <!-- Other links -->\n\n    <div text-center margin-top>\n\n      <span ion-text color="primary" tappable (click)="login()">I have an account</span>\n\n    </div>\n\n\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\register\register.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_7__angular_fire_firestore__["a" /* AngularFirestore */],
@@ -1181,7 +1194,7 @@ var NotificationsPage = (function () {
     };
     NotificationsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-notifications',template:/*ion-inline-start:"D:\app\baza\src\pages\notifications\notifications.html"*/'<!-- -->\n\n<ion-header>\n\n    <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    </ion-navbar>\n\n  </ion-header>\n\n  <ion-content>\n\n  <ion-list class="no-margin">\n\n  <ion-list-header class="no-margin">\n\n  	<ion-icon name="notifications" color="primary"></ion-icon>\n\n  	<span ion-text color="primary" class="bold">Notifications</span>\n\n  </ion-list-header>\n\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail"></ion-icon>\n\n  	New booking success!\n\n  </button>\n\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail"></ion-icon>\n\n  	Activity rescheduled\n\n  </button>\n\n  <button ion-item class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n\n  	<span ion-text color="secondary">Activity rescheduled</span>\n\n  </button>\n\n  <button ion-item class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n\n  	<span ion-text color="secondary">Activity rescheduled</span>\n\n  </button>\n\n</ion-list>\n\n</ion-content>'/*ion-inline-end:"D:\app\baza\src\pages\notifications\notifications.html"*/
+            selector: 'page-notifications',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\notifications\notifications.html"*/'<!-- -->\n\n<ion-header>\n\n    <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    </ion-navbar>\n\n  </ion-header>\n\n  <ion-content>\n\n  <ion-list class="no-margin">\n\n  <ion-list-header class="no-margin">\n\n  	<ion-icon name="notifications" color="primary"></ion-icon>\n\n  	<span ion-text color="primary" class="bold">Notifications</span>\n\n  </ion-list-header>\n\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail"></ion-icon>\n\n  	New booking success!\n\n  </button>\n\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail"></ion-icon>\n\n  	Activity rescheduled\n\n  </button>\n\n  <button ion-item class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n\n  	<span ion-text color="secondary">Activity rescheduled</span>\n\n  </button>\n\n  <button ion-item class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n\n  	<span ion-text color="secondary">Activity rescheduled</span>\n\n  </button>\n\n</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\notifications\notifications.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
     ], NotificationsPage);
@@ -1241,8 +1254,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_categories_categories_module__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_feedback_feedback_module__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_helpdesk_helpdesk_module__ = __webpack_require__(258);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_refer_refer_module__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_single_artist_single_artist_module__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_refer_refer_module__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_single_artist_single_artist_module__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_single_category_single_category_module__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_users_users_module__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_user_profile_user_profile_module__ = __webpack_require__(263);
@@ -1319,8 +1332,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/categories/categories.module#CategoriesPageModule', name: 'CategoriesPage', segment: 'categories', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/feedback/feedback.module#FeedbackPageModule', name: 'FeedbackPage', segment: 'feedback', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/helpdesk/helpdesk.module#HelpdeskPageModule', name: 'HelpdeskPage', segment: 'helpdesk', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/single-artist/single-artist.module#SingleArtistPageModule', name: 'SingleArtistPage', segment: 'single-artist', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/refer/refer.module#ReferPageModule', name: 'ReferPage', segment: 'refer', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/single-artist/single-artist.module#SingleArtistPageModule', name: 'SingleArtistPage', segment: 'single-artist', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/single-category/single-category.module#SingleCategoryPageModule', name: 'SingleCategoryPage', segment: 'single-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-profile/user-profile.module#UserProfilePageModule', name: 'UserProfilePage', segment: 'user-profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/users/users.module#UsersPageModule', name: 'UsersPage', segment: 'users', priority: 'low', defaultHistory: [] }
@@ -1424,7 +1437,7 @@ var UsersPage = (function () {
     };
     UsersPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-users',template:/*ion-inline-start:"D:\app\baza\src\pages\users\users.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" style="background-image: \'{{backgroundImages.categoryBG}}\'">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{backgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="animated fadeIn common-bg">\n\n  <ion-list>\n\n      <div class="ArtistList"  *ngFor ="let user of users" id="user-{{user.id}}">\n\n        <ion-avatar><img src="{{user.img}}"></ion-avatar>\n\n        <ion-label><h1 innerHTML="{{user.name}}"></h1><p innerHTML="{{user.category}}"></p></ion-label>\n\n      </div>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\app\baza\src\pages\users\users.html"*/,
+            selector: 'page-users',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\users\users.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" style="background-image: \'{{backgroundImages.categoryBG}}\'">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{backgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="animated fadeIn common-bg">\n\n  <ion-list>\n\n      <div class="ArtistList"  *ngFor ="let user of users" id="user-{{user.id}}">\n\n        <ion-avatar><img src="{{user.img}}"></ion-avatar>\n\n        <ion-label><h1 innerHTML="{{user.name}}"></h1><p innerHTML="{{user.category}}"></p></ion-label>\n\n      </div>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\users\users.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__app_userService__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]])
     ], UsersPage);
@@ -1717,7 +1730,7 @@ var WeatherProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_categories_categories__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_notifications_notifications__ = __webpack_require__(322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_refer_refer__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_refer_refer__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_feedback_feedback__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_bookings_bookings__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_helpdesk_helpdesk__ = __webpack_require__(138);
@@ -1804,7 +1817,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\app\baza\src\app\app.html"*/'<ion-menu side="left" id="authenticated" [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar class="user-profile">\n\n\n\n      <ion-grid>\n\n        <ion-row>\n\n              <div class="user-avatar" menuClose (click)="openProfile()" >\n\n                <img src="{{backgroundImages.avatar}}">\n\n              </div>\n\n            <h2 ion-text class="no-margin bold text-white">            </h2>\n\n            <p (click)="logout()" menuClose>log out</p>\n\n        </ion-row>\n\n      </ion-grid>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content color="primary" class="SideToggle">\n\n    <ion-list class="user-list">\n\n      <button ion-item menuClose class="text-1x" *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n\n        <span ion-text color="primary">{{menuItem.title}}</span>\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"D:\app\baza\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\app\app.html"*/'<ion-menu side="left" id="authenticated" [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar class="user-profile">\n\n\n\n      <ion-grid>\n\n        <ion-row>\n\n              <div class="user-avatar" menuClose (click)="openProfile()" >\n\n                <img src="{{backgroundImages.avatar}}">\n\n              </div>\n\n            <h2 ion-text class="no-margin bold text-white">            </h2>\n\n            <p (click)="logout()" menuClose>log out</p>\n\n        </ion-row>\n\n      </ion-grid>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content color="primary" class="SideToggle">\n\n    <ion-list class="user-list">\n\n      <button ion-item menuClose class="text-1x" *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n\n        <span ion-text color="primary">{{menuItem.title}}</span>\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__userService__["a" /* UserService */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* Platform */],
@@ -1990,7 +2003,7 @@ var CategoriesPage = (function () {
     };
     CategoriesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-categories',template:/*ion-inline-start:"D:\app\baza\src\pages\categories\categories.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{backgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="animated fadeIn common-bg">\n\n    <ion-item style="margin-bottom: 15px; ">\n\n      <ion-input type="text" placeholder="Search Category"></ion-input>\n\n    </ion-item>\n\n  <ion-list style="column-count: 2">\n\n    <div class="ListItem"  *ngFor ="let user of CategoryData" id="Category-{{user.name}}" (click)="openCategory(user)" >\n\n      <ion-avatar><img src="{{user.img}}"></ion-avatar>\n\n    </div>\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"D:\app\baza\src\pages\categories\categories.html"*/,
+            selector: 'page-categories',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\categories\categories.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{backgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="animated fadeIn common-bg">\n\n    <ion-item style="margin-bottom: 15px; ">\n\n      <ion-input type="text" placeholder="Search Category"></ion-input>\n\n    </ion-item>\n\n  <ion-list style="column-count: 2">\n\n    <div class="ListItem"  *ngFor ="let user of CategoryData" id="Category-{{user.name}}" (click)="openCategory(user)" >\n\n      <ion-avatar><img src="{{user.img}}"></ion-avatar>\n\n    </div>\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\categories\categories.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],

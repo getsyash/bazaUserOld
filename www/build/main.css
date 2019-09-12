@@ -26375,7 +26375,7 @@ page-single-category .row img {
   display: inline;
 }
 
-page-single-category .ion-row.UserList-Test {
+page-single-category .ion-row {
   display: table;
   background: #efefef;
   padding: 1.5%;
@@ -26392,6 +26392,10 @@ page-single-category .ion-row .col-1 {
 
 page-single-category .ion-row .col-2 {
   width: 100%;
+}
+
+page-single-category ion-avatar img {
+  border-radius: 100%;
 }
 
 page-user-profile .toolbar-content h3 {

@@ -19,9 +19,9 @@
     <ion-input type="text" placeholder="Search Artist"></ion-input>
   </ion-item>
   <ion-list *ngFor="let user of Userdata">
-      <div (click)="openUser(user)" class="ion-row UserList-{{user.Name}}">
-        <div class="col col-1"><ion-avatar><img src="{{user.img}}"></ion-avatar></div>
-        <div class="col col-2"><h1 [innerHTML]="user.Name"></h1><span [innerHTML]="user.title"></span><span [innerHTML]="user.languages"></span></div>
+      <div (click)="openUser(user)" class="ion-row UserList-{{user.username}}">
+        <div class="col col-1"><ion-avatar><img src="../../assets/img/user/avatar.jpeg"></ion-avatar></div>
+        <div class="col col-2"><h1 [innerHTML]="user.username"></h1><span [innerHTML]="user.teamname"></span><span [innerHTML]="user.languages"></span></div>
       </div>
   </ion-list>
 </ion-content>
