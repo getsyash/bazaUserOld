@@ -9,6 +9,31 @@
 </ion-header>
 
 <ion-content padding class="animated fadeIn common-bg">
+    <ion-row>
+      <ion-item>
+          <ion-label position="floating">
+            My Location
+          </ion-label>
+          <ion-select>
+            <ion-option>Hyderabad</ion-option>
+            <ion-option>Secunderabad</ion-option>
+            <ion-option>Vijayawada</ion-option>
+            <ion-option>Guntur</ion-option>
+            <ion-option>Nellore</ion-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">
+            Event Type
+          </ion-label>
+          <ion-select>
+            <ion-option>Wedding</ion-option>
+            <ion-option>Birthday</ion-option>
+            <ion-option>College Events</ion-option>
+            <ion-option>Retirement Functions</ion-option>
+          </ion-select>
+      </ion-item>
+    </ion-row> 
   <ion-searchbar [(ngModel)]="searchCategory" (ionChange)="setCategories($event)" placeholder="Search Category"></ion-searchbar>
   <ion-label style="margin-left: 1em;  font-size: 1.35em;"><ion-icon name="apps" style="margin-right: 1em"></ion-icon>Categories</ion-label>
   <ion-list style="margin-top: 15px; text-align: center">

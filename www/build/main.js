@@ -40,7 +40,7 @@ var HelpdeskPage = (function () {
     };
     HelpdeskPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-helpdesk',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/helpdesk/helpdesk.html"*/'<!-- -->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n    <div>\n      <p>Thank you for reaching us ! </p>\n      <p>Please provide your information below </p>\n    </div>\n  </ion-list>\n\n  <form (ngSubmit)="logForm()">\n      <ion-item>\n        <ion-label>Slot ID</ion-label>\n        <ion-input type="text" [(ngModel)]="todo.slotID" name="title"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Category</ion-label>\n        <ion-input type="text" [(ngModel)]="todo.category" name="title"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Subject</ion-label>\n        <ion-input type="text" [(ngModel)]="todo.subject" name="title"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Querry/Issue</ion-label>\n        <ion-textarea [(ngModel)]="todo.issue" name="description"></ion-textarea>\n      </ion-item>\n      <button ion-button type="submit" block>Submit</button>\n    </form>\n\n    <ion-list>\n      <div>\n        <h2 style="text-align: center">Contact Us </h2>\n        <p>info@baza.com</p>\n        <p>040-123456789(Mon - Fri 11am - 9pm)</p>\n      </div>\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/helpdesk/helpdesk.html"*/,
+            selector: 'page-helpdesk',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div>\n\n      <p>Thank you for reaching us ! </p>\n\n      <p>Please provide your information below </p>\n\n    </div>\n\n  </ion-list>\n\n\n\n  <form (ngSubmit)="logForm()">\n\n      <ion-item>\n\n        <ion-label>Slot ID</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.slotID" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Category</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.category" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Subject</ion-label>\n\n        <ion-input type="text" [(ngModel)]="todo.subject" name="title"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Querry/Issue</ion-label>\n\n        <ion-textarea [(ngModel)]="todo.issue" name="description"></ion-textarea>\n\n      </ion-item>\n\n      <button ion-button type="submit" block>Submit</button>\n\n    </form>\n\n\n\n    <ion-list>\n\n      <div>\n\n        <h2 style="text-align: center">Contact Us </h2>\n\n        <p>info@baza.com</p>\n\n        <p>040-123456789(Mon - Fri 11am - 9pm)</p>\n\n      </div>\n\n    </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\helpdesk\helpdesk.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], HelpdeskPage);
@@ -55,123 +55,14 @@ var HelpdeskPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingleArtistPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_userService__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_firestore__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_imageService__ = __webpack_require__(24);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/**
- * Generated class for the SingleArtistPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SingleArtistPage = (function () {
-    //Secrete Key = 'tqNz30fI6WADP8R9rHzm3rP7'
-    function SingleArtistPage(navCtrl, navParams, afstore, user, alert) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.afstore = afstore;
-        this.user = user;
-        this.alert = alert;
-        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_4__app_imageService__["a" /* default */];
-        this.thisdate = new Date().toISOString();
-        this.paymentAmount = '10000';
-        this.currency = 'INR';
-        this.razor_key = 'rzp_test_ZeQqQwNh2zlbRT';
-        this.data = this.navParams.get('data');
-        console.log(this.data);
-    }
-    SingleArtistPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SingleArtistPage');
-    };
-    SingleArtistPage.prototype.bookNow = function () {
-        var data = {
-            enddate: this.endDate.toString(),
-            event: 'Marriage',
-            location: this.location,
-            startdate: this.startDate.toString(),
-            useruid: this.user.getUID()
-        };
-        // this.afstore.collection(`Artists`).doc(`${this.data.uid}`).collection(`bookings`).add(data).then( ()=>{
-        //    this.alert.create({title: 'Booking Completed',buttons: ['Ok']}).present()
-        // })
-    };
-    SingleArtistPage.prototype.payWithRazor = function () {
-        var options = {
-            description: 'Credits towards consultation',
-            image: 'https://i.imgur.com/3g7nmJC.png',
-            currency: this.currency,
-            key: this.razor_key,
-            amount: this.paymentAmount,
-            name: this.user.getusername(),
-            prefill: {
-                email: 'admin@enappd.com',
-                contact: '9621323231',
-                name: 'Enappd'
-            },
-            theme: {
-                color: '#F37254'
-            },
-            modal: {
-                ondismiss: function () {
-                    alert('dismissed');
-                }
-            }
-        };
-        var successCallback = function (payment_id) {
-            alert('payment_id: ' + payment_id);
-        };
-        var cancelCallback = function (error) {
-            alert(error.description + ' (Error ' + error.code + ')');
-        };
-        RazorpayCheckout.open(options, successCallback, cancelCallback);
-    };
-    SingleArtistPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-single-artist',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/single-artist/single-artist.html"*/'<!--\n  Generated template for the SingleArtistPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img class="ArtistImage" src="../../assets/img/user/avatar.jpeg" style="position: relative;right: 10%;">\n    <ion-row class="ArtistDetails"> \n      <ion-col class="ArtistName"><span [innerHTML]="data.FirstName"></span></ion-col>\n      <ion-col class="ArtistTitle"><span [innerHTML]="data.teamname"></span></ion-col>\n    </ion-row>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n\n  <ion-list>\n    <div style="text-align: center"><h3>About</h3></div>\n    <p [innerHTML]="data.aboutgroup" style="text-align: center"></p>\n  </ion-list>\n  <ion-list class="HighlightItems">\n    <ion-row>\n      <ion-col>Attend only</ion-col>\n      <ion-col [innerHTML]="data.Attend"></ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>Remuneration</ion-col>\n      <ion-col><span>INR </span><span [innerHTML]="data.remuneration" ></span></ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>Language</ion-col>\n      <ion-col [innerHTML]="data.languages"></ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>Total Events</ion-col>\n      <ion-col [innerHTML]="data.totalevents"></ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>Willing to come</ion-col>\n      <ion-col [innerHTML]="data.willingtocome"></ion-col>\n    </ion-row>\n  </ion-list>\n\n  <ion-row>\n    <ion-col>\n      <ion-datetime displayFormat="DD/MMM/YYYY" min={{thisdate}} [(ngModel)]="startDate" placeholder="Event Start Date" ></ion-datetime>\n    </ion-col>\n    <ion-col>\n      <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="endDate" min={{startDate}} placeholder="Event End Date"></ion-datetime>\n    </ion-col>\n    <ion-item>\n      <ion-label>Event Location</ion-label>\n      <ion-select  [(ngModel)]="location">\n        <ion-option value="Local">Local</ion-option>\n        <ion-option value="Non-Local">Non-Local</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-row>\n  <ion-buttons>\n    <button class="BookingButton" (click)="payWithRazor()">\n      Schedule booking\n    </button>\n  </ion-buttons>\n\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/single-artist/single-artist.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["i" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_fire_firestore__["a" /* AngularFirestore */],
-            __WEBPACK_IMPORTED_MODULE_1__app_userService__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* AlertController */]])
-    ], SingleArtistPage);
-    return SingleArtistPage;
-}());
-
-//# sourceMappingURL=single-artist.js.map
-
-/***/ }),
-
-/***/ 141:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoriesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__single_category_single_category__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__single_category_single_category__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_firestore__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_imageService__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__single_artist_single_artist__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__single_artist_single_artist__ = __webpack_require__(138);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -246,7 +137,7 @@ var CategoriesPage = (function () {
     };
     CategoriesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-categories',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/categories/categories.html"*/'<!-- -->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{backgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="animated fadeIn common-bg">\n  <ion-searchbar [(ngModel)]="searchCategory" (ionChange)="setCategories($event)" placeholder="Search Category"></ion-searchbar>\n  <ion-label style="margin-left: 1em;  font-size: 1.35em;"><ion-icon name="apps" style="margin-right: 1em"></ion-icon>Categories</ion-label>\n  <ion-list style="margin-top: 15px; text-align: center">\n    <div class="ListItem"  *ngFor ="let user of CategoryData" id="Category-{{user.name}}" (click)="openCategory(user)" >\n      <ion-thumbnail><img src="{{user.img}}"></ion-thumbnail>\n      <p class="" style="text-align: center">{{user.name}}</p>\n    </div>\n  </ion-list>\n  <ion-label style="margin-left: 1em;  font-size: 1.35em;"><ion-icon name="flame" style="margin-right: 1em"></ion-icon>Popular</ion-label>\n  <ion-list style="margin-top: 15px">\n    <div class="ListItem"  *ngFor ="let user of Userdata" id="User-{{user.name}}" (click)="openUser(user)" >\n      <ion-thumbnail>\n        <img *ngIf="!user.img" class="posterThumbNail" src="../../assets/img/avatar.jpeg" />\n        <img *ngIf="user.img" class="posterThumbNail" [src]="user.img" >\n      </ion-thumbnail>\n      <p class="" style="text-align: center">{{user.FirstName}} | {{user.teamname}}</p>\n    </div>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/categories/categories.html"*/,
+            selector: 'page-categories',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\categories\categories.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{backgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="animated fadeIn common-bg">\n\n    <ion-row>\n\n      <ion-item>\n\n          <ion-label position="floating">\n\n            My Location\n\n          </ion-label>\n\n          <ion-select>\n\n            <ion-option>Hyderabad</ion-option>\n\n            <ion-option>Secunderabad</ion-option>\n\n            <ion-option>Vijayawada</ion-option>\n\n            <ion-option>Guntur</ion-option>\n\n            <ion-option>Nellore</ion-option>\n\n          </ion-select>\n\n      </ion-item>\n\n      <ion-item>\n\n          <ion-label position="floating">\n\n            Event Type\n\n          </ion-label>\n\n          <ion-select>\n\n            <ion-option>Wedding</ion-option>\n\n            <ion-option>Birthday</ion-option>\n\n            <ion-option>College Events</ion-option>\n\n            <ion-option>Retirement Functions</ion-option>\n\n          </ion-select>\n\n      </ion-item>\n\n    </ion-row> \n\n  <ion-searchbar [(ngModel)]="searchCategory" (ionChange)="setCategories($event)" placeholder="Search Category"></ion-searchbar>\n\n  <ion-label style="margin-left: 1em;  font-size: 1.35em;"><ion-icon name="apps" style="margin-right: 1em"></ion-icon>Categories</ion-label>\n\n  <ion-list style="margin-top: 15px; text-align: center">\n\n    <div class="ListItem"  *ngFor ="let user of CategoryData" id="Category-{{user.name}}" (click)="openCategory(user)" >\n\n      <ion-thumbnail><img src="{{user.img}}"></ion-thumbnail>\n\n      <p class="" style="text-align: center">{{user.name}}</p>\n\n    </div>\n\n  </ion-list>\n\n  <ion-label style="margin-left: 1em;  font-size: 1.35em;"><ion-icon name="flame" style="margin-right: 1em"></ion-icon>Popular</ion-label>\n\n  <ion-list style="margin-top: 15px">\n\n    <div class="ListItem"  *ngFor ="let user of Userdata" id="User-{{user.name}}" (click)="openUser(user)" >\n\n      <ion-thumbnail>\n\n        <img *ngIf="!user.img" class="posterThumbNail" src="../../assets/img/avatar.jpeg" />\n\n        <img *ngIf="user.img" class="posterThumbNail" [src]="user.img" >\n\n      </ion-thumbnail>\n\n      <p class="" style="text-align: center">{{user.FirstName}} | {{user.teamname}}</p>\n\n    </div>\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\categories\categories.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
@@ -257,6 +148,116 @@ var CategoriesPage = (function () {
 }());
 
 //# sourceMappingURL=categories.js.map
+
+/***/ }),
+
+/***/ 138:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingleArtistPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_userService__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_firestore__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_imageService__ = __webpack_require__(24);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the SingleArtistPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SingleArtistPage = (function () {
+    //Secrete Key = 'tqNz30fI6WADP8R9rHzm3rP7'
+    function SingleArtistPage(navCtrl, navParams, afstore, user, alert) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.afstore = afstore;
+        this.user = user;
+        this.alert = alert;
+        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_4__app_imageService__["a" /* default */];
+        this.thisdate = new Date().toISOString();
+        this.paymentAmount = '10000';
+        this.currency = 'INR';
+        this.razor_key = 'rzp_test_ZeQqQwNh2zlbRT';
+        this.data = this.navParams.get('data');
+        console.log(this.data);
+    }
+    //
+    SingleArtistPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SingleArtistPage');
+    };
+    SingleArtistPage.prototype.bookNow = function () {
+        var data = {
+            enddate: this.endDate.toString(),
+            event: 'Marriage',
+            location: this.location,
+            startdate: this.startDate.toString(),
+            useruid: this.user.getUID()
+        };
+        // this.afstore.collection(`Artists`).doc(`${this.data.uid}`).collection(`bookings`).add(data).then( ()=>{
+        //    this.alert.create({title: 'Booking Completed',buttons: ['Ok']}).present()
+        // })
+    };
+    SingleArtistPage.prototype.payWithRazor = function () {
+        var options = {
+            description: 'Credits towards consultation',
+            image: 'https://i.imgur.com/3g7nmJC.png',
+            currency: this.currency,
+            key: this.razor_key,
+            amount: this.paymentAmount,
+            name: this.user.getusername(),
+            prefill: {
+                email: 'admin@enappd.com',
+                contact: '9621323231',
+                name: 'Enappd'
+            },
+            theme: {
+                color: '#F37254'
+            },
+            modal: {
+                ondismiss: function () {
+                    alert('dismissed');
+                }
+            }
+        };
+        var successCallback = function (payment_id) {
+            alert('payment_id: ' + payment_id);
+        };
+        var cancelCallback = function (error) {
+            alert(error.description + ' (Error ' + error.code + ')');
+        };
+        RazorpayCheckout.open(options, successCallback, cancelCallback);
+    };
+    SingleArtistPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
+            selector: 'page-single-artist',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-artist\single-artist.html"*/'<!--\n\n  Generated template for the SingleArtistPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img class="ArtistImage" src="../../assets/img/user/avatar.jpeg" style="position: relative;right: 10%;">\n\n    <ion-row class="ArtistDetails"> \n\n      <ion-col class="ArtistName"><span [innerHTML]="data.FirstName"></span></ion-col>\n\n      <ion-col class="ArtistTitle"><span [innerHTML]="data.teamname"></span></ion-col>\n\n    </ion-row>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <div style="text-align: center"><h3>About</h3></div>\n\n    <p [innerHTML]="data.aboutgroup" style="text-align: center"></p>\n\n  </ion-list>\n\n  <ion-list class="HighlightItems">\n\n    <ion-row>\n\n      <ion-col>Attend only</ion-col>\n\n      <ion-col [innerHTML]="data.Attend"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Remuneration</ion-col>\n\n      <ion-col><span>INR </span><span [innerHTML]="data.remuneration" ></span></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Language</ion-col>\n\n      <ion-col [innerHTML]="data.languages"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Total Events</ion-col>\n\n      <ion-col [innerHTML]="data.totalevents"></ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>Willing to come</ion-col>\n\n      <ion-col [innerHTML]="data.willingtocome"></ion-col>\n\n    </ion-row>\n\n  </ion-list>\n\n\n\n  <ion-row>\n\n    <ion-col>\n\n      <ion-datetime displayFormat="DD/MMM/YYYY" min={{thisdate}} [(ngModel)]="startDate" placeholder="Event Start Date" ></ion-datetime>\n\n    </ion-col>\n\n    <ion-col>\n\n      <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="endDate" min={{startDate}} placeholder="Event End Date"></ion-datetime>\n\n    </ion-col>\n\n    <ion-item>\n\n      <ion-label>Event Location</ion-label>\n\n      <ion-select  [(ngModel)]="location">\n\n        <ion-option value="Local">Local</ion-option>\n\n        <ion-option value="Non-Local">Non-Local</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n  </ion-row>\n\n  <ion-buttons>\n\n    <button class="BookingButton" (click)="payWithRazor()">\n\n      Schedule booking\n\n    </button>\n\n  </ion-buttons>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-artist\single-artist.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_fire_firestore__["a" /* AngularFirestore */],
+            __WEBPACK_IMPORTED_MODULE_1__app_userService__["a" /* UserService */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* AlertController */]])
+    ], SingleArtistPage);
+    return SingleArtistPage;
+}());
+
+//# sourceMappingURL=single-artist.js.map
 
 /***/ }),
 
@@ -318,7 +319,7 @@ var UserProfilePage = (function () {
     };
     UserProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-user-profile',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/user-profile/user-profile.html"*/'<!--\n  Generated template for the UserProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n    <ion-col><h3>My Profile</h3></ion-col>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button clear block (click)="updateProfile()">Update Profile</button>\n  <ion-item>\n    <ion-label>Name</ion-label>\n    <ion-input [(ngModel)]="profileData.username"></ion-input>\n  </ion-item>\n\n  <ion-item>\n      <ion-label>Phone</ion-label>\n      <ion-input [(ngModel)]="profileData.phone"></ion-input>\n    </ion-item>\n    \n  <ion-item>\n      <ion-label>Email</ion-label>\n      <ion-input [(ngModel)]="profileData.email"></ion-input>\n    </ion-item>\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/user-profile/user-profile.html"*/,
+            selector: 'page-user-profile',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\user-profile\user-profile.html"*/'<!--\n\n  Generated template for the UserProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <ion-col><h3>My Profile</h3></ion-col>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <button ion-button clear block (click)="updateProfile()">Update Profile</button>\n\n  <ion-item>\n\n    <ion-label>Name</ion-label>\n\n    <ion-input [(ngModel)]="profileData.username"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label>Phone</ion-label>\n\n      <ion-input [(ngModel)]="profileData.phone"></ion-input>\n\n    </ion-item>\n\n    \n\n  <ion-item>\n\n      <ion-label>Email</ion-label>\n\n      <ion-input [(ngModel)]="profileData.email"></ion-input>\n\n    </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\user-profile\user-profile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* NavController */],
@@ -339,7 +340,7 @@ var UserProfilePage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_userService__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categories_categories__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categories_categories__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_register__ = __webpack_require__(319);
@@ -448,7 +449,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/login/login.html"*/'<!-- -->\n<ion-content padding class="animated fadeIn login auth-page">\n  <div class="login-content">\n\n    <!-- Logo -->\n    <div padding-horizontal text-center class="animated fadeInDown">\n      <div class="logo"></div>\n    </div>\n\n    <!-- Login form -->\n    <form class="list-form" style="padding-top: 30px;padding-bottom: 20px;">\n      <ion-item>\n        <ion-input type="text" [(ngModel)]="email" name="email" placeholder="Email"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n      </ion-item>\n    </form>\n    <div>\n      <button ion-button icon-start block color="dark" tappable (click)="login()" class="LoginButton">\n        <ion-icon name="log-in"></ion-icon>\n        Login\n      </button>\n      <div id="recaptcha-container"></div>\n\n\n    </div>\n\n\n    <!-- Other links -->\n    <div text-center margin-top>\n      <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>\n    </div>\n\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/login/login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\login\login.html"*/'<!-- -->\n\n<ion-content padding class="animated fadeIn login auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding-horizontal text-center class="animated fadeInDown">\n\n      <div class="logo"></div>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form" style="padding-top: 30px;padding-bottom: 20px;">\n\n      <ion-item>\n\n        <ion-input type="text" [(ngModel)]="email" name="email" placeholder="Email"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n    </form>\n\n    <div>\n\n      <button ion-button icon-start block color="dark" tappable (click)="login()" class="LoginButton">\n\n        <ion-icon name="log-in"></ion-icon>\n\n        Login\n\n      </button>\n\n      <div id="recaptcha-container"></div>\n\n\n\n\n\n    </div>\n\n\n\n\n\n    <!-- Other links -->\n\n    <div text-center margin-top>\n\n      <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>\n\n    </div>\n\n\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__app_userService__["a" /* UserService */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["a" /* AlertController */],
@@ -506,22 +507,22 @@ var map = {
 		248
 	],
 	"../pages/categories/categories.module": [
-		260
-	],
-	"../pages/feedback/feedback.module": [
 		250
 	],
+	"../pages/feedback/feedback.module": [
+		256
+	],
 	"../pages/helpdesk/helpdesk.module": [
-		252
+		255
 	],
 	"../pages/refer/refer.module": [
-		253
+		258
 	],
 	"../pages/single-artist/single-artist.module": [
-		261
+		260
 	],
 	"../pages/single-category/single-category.module": [
-		255
+		261
 	],
 	"../pages/user-profile/user-profile.module": [
 		263
@@ -626,7 +627,7 @@ var BookingsPage = (function () {
     };
     BookingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-bookings',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/bookings/bookings.html"*/'<!-- -->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n    <h2>My Bookings</h2>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list style="text-align: center; color: black">\n    <p>If you have any queries about your bookings,<br>please feel freeto contact us through <br>\n    <span (click)="openHelpPage()">Help Desk</span> \n    <hr>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/bookings/bookings.html"*/,
+            selector: 'page-bookings',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    <h2>My Bookings</h2>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list style="text-align: center; color: black">\n\n    <p>If you have any queries about your bookings,<br>please feel freeto contact us through <br>\n\n    <span (click)="openHelpPage()">Help Desk</span> \n\n    <hr>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\bookings\bookings.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */]])
     ], BookingsPage);
@@ -642,10 +643,10 @@ var BookingsPage = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedbackPageModule", function() { return FeedbackPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoriesPageModule", function() { return CategoriesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feedback__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories__ = __webpack_require__(137);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -655,23 +656,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FeedbackPageModule = (function () {
-    function FeedbackPageModule() {
+var CategoriesPageModule = (function () {
+    function CategoriesPageModule() {
     }
-    FeedbackPageModule = __decorate([
+    CategoriesPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__feedback__["a" /* FeedbackPage */],
+                __WEBPACK_IMPORTED_MODULE_2__categories__["a" /* CategoriesPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__feedback__["a" /* FeedbackPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__categories__["a" /* CategoriesPage */]),
             ],
         })
-    ], FeedbackPageModule);
-    return FeedbackPageModule;
+    ], CategoriesPageModule);
+    return CategoriesPageModule;
 }());
 
-//# sourceMappingURL=feedback.module.js.map
+//# sourceMappingURL=categories.module.js.map
 
 /***/ }),
 
@@ -679,218 +680,8 @@ var FeedbackPageModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedbackPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_imageService__ = __webpack_require__(24);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the FeedbackPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var FeedbackPage = (function () {
-    function FeedbackPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_2__app_imageService__["a" /* default */];
-    }
-    FeedbackPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad FeedbackPage');
-    };
-    FeedbackPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-feedback',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/feedback/feedback.html"*/'<!-- -->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 5% ">\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/feedback/feedback.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], FeedbackPage);
-    return FeedbackPage;
-}());
-
-//# sourceMappingURL=feedback.js.map
-
-/***/ }),
-
-/***/ 252:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpdeskPageModule", function() { return HelpdeskPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpdesk__ = __webpack_require__(136);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var HelpdeskPageModule = (function () {
-    function HelpdeskPageModule() {
-    }
-    HelpdeskPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */]),
-            ],
-        })
-    ], HelpdeskPageModule);
-    return HelpdeskPageModule;
-}());
-
-//# sourceMappingURL=helpdesk.module.js.map
-
-/***/ }),
-
-/***/ 253:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReferPageModule", function() { return ReferPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refer__ = __webpack_require__(254);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var ReferPageModule = (function () {
-    function ReferPageModule() {
-    }
-    ReferPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__refer__["a" /* ReferPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__refer__["a" /* ReferPage */]),
-            ],
-        })
-    ], ReferPageModule);
-    return ReferPageModule;
-}());
-
-//# sourceMappingURL=refer.module.js.map
-
-/***/ }),
-
-/***/ 254:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReferPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_imageService__ = __webpack_require__(24);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the ReferPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ReferPage = (function () {
-    function ReferPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_2__app_imageService__["a" /* default */];
-    }
-    ReferPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ReferPage');
-    };
-    ReferPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-refer',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/refer/refer.html"*/'<!-- -->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/refer/refer.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], ReferPage);
-    return ReferPage;
-}());
-
-//# sourceMappingURL=refer.js.map
-
-/***/ }),
-
-/***/ 255:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleCategoryPageModule", function() { return SingleCategoryPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_category__ = __webpack_require__(256);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var SingleCategoryPageModule = (function () {
-    function SingleCategoryPageModule() {
-    }
-    SingleCategoryPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__single_category__["a" /* SingleCategoryPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__single_category__["a" /* SingleCategoryPage */]),
-            ],
-        })
-    ], SingleCategoryPageModule);
-    return SingleCategoryPageModule;
-}());
-
-//# sourceMappingURL=single-category.module.js.map
-
-/***/ }),
-
-/***/ 256:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingleCategoryPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__single_artist_single_artist__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__single_artist_single_artist__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_firestore__ = __webpack_require__(57);
@@ -962,7 +753,7 @@ var SingleCategoryPage = (function () {
     };
     SingleCategoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-single-category',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/single-category/single-category.html"*/'<!--\n  Generated template for the SingleCategoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list style="display: flex;align-items: center; padding-right: 1em">\n      <ion-searchbar [(ngModel)]="searchArtist" (ionChange)="setAtrist($event)" placeholder="Search Artists"></ion-searchbar>\n      <ion-icon name="options" (click)="filter()"></ion-icon>\n  </ion-list>\n  <ion-list *ngFor="let user of Userdata" style="margin-top: 15px">\n      <div (click)="openUser(user)" class="ion-row UserList-{{user.username}}">\n        <div class="col col-1"><ion-avatar><img src="../../assets/img/user/avatar.jpeg"></ion-avatar></div>\n        <div class="col col-2"><h1 [innerHTML]="user.FirstName"></h1><span [innerHTML]="user.teamname"></span><span [innerHTML]="user.languages"></span></div>\n      </div>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/single-category/single-category.html"*/,
+            selector: 'page-single-category',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-category\single-category.html"*/'<!--\n\n  Generated template for the SingleCategoryPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list style="display: flex;align-items: center; padding-right: 1em">\n\n      <ion-searchbar [(ngModel)]="searchArtist" (ionChange)="setAtrist($event)" placeholder="Search Artists"></ion-searchbar>\n\n      <ion-icon name="options" (click)="filter()"></ion-icon>\n\n  </ion-list>\n\n  <ion-list *ngFor="let user of Userdata" style="margin-top: 15px">\n\n      <div (click)="openUser(user)" class="ion-row UserList-{{user.username}}">\n\n        <div class="col col-1"><ion-avatar><img src="../../assets/img/user/avatar.jpeg"></ion-avatar></div>\n\n        <div class="col col-2"><h1 [innerHTML]="user.FirstName"></h1><span [innerHTML]="user.teamname"></span><span [innerHTML]="user.languages"></span></div>\n\n      </div>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\single-category\single-category.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_fire_firestore__["a" /* AngularFirestore */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */]])
     ], SingleCategoryPage);
@@ -973,15 +764,15 @@ var SingleCategoryPage = (function () {
 
 /***/ }),
 
-/***/ 260:
+/***/ 255:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoriesPageModule", function() { return CategoriesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpdeskPageModule", function() { return HelpdeskPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpdesk__ = __webpack_require__(136);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -991,27 +782,199 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CategoriesPageModule = (function () {
-    function CategoriesPageModule() {
+var HelpdeskPageModule = (function () {
+    function HelpdeskPageModule() {
     }
-    CategoriesPageModule = __decorate([
+    HelpdeskPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__categories__["a" /* CategoriesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__categories__["a" /* CategoriesPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__helpdesk__["a" /* HelpdeskPage */]),
             ],
         })
-    ], CategoriesPageModule);
-    return CategoriesPageModule;
+    ], HelpdeskPageModule);
+    return HelpdeskPageModule;
 }());
 
-//# sourceMappingURL=categories.module.js.map
+//# sourceMappingURL=helpdesk.module.js.map
 
 /***/ }),
 
-/***/ 261:
+/***/ 256:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedbackPageModule", function() { return FeedbackPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feedback__ = __webpack_require__(257);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var FeedbackPageModule = (function () {
+    function FeedbackPageModule() {
+    }
+    FeedbackPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__feedback__["a" /* FeedbackPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__feedback__["a" /* FeedbackPage */]),
+            ],
+        })
+    ], FeedbackPageModule);
+    return FeedbackPageModule;
+}());
+
+//# sourceMappingURL=feedback.module.js.map
+
+/***/ }),
+
+/***/ 257:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedbackPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_imageService__ = __webpack_require__(24);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the FeedbackPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var FeedbackPage = (function () {
+    function FeedbackPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_2__app_imageService__["a" /* default */];
+    }
+    FeedbackPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad FeedbackPage');
+    };
+    FeedbackPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-feedback',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\feedback\feedback.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 5% ">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\feedback\feedback.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], FeedbackPage);
+    return FeedbackPage;
+}());
+
+//# sourceMappingURL=feedback.js.map
+
+/***/ }),
+
+/***/ 258:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReferPageModule", function() { return ReferPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refer__ = __webpack_require__(259);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ReferPageModule = (function () {
+    function ReferPageModule() {
+    }
+    ReferPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__refer__["a" /* ReferPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__refer__["a" /* ReferPage */]),
+            ],
+        })
+    ], ReferPageModule);
+    return ReferPageModule;
+}());
+
+//# sourceMappingURL=refer.module.js.map
+
+/***/ }),
+
+/***/ 259:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReferPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_imageService__ = __webpack_require__(24);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the ReferPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ReferPage = (function () {
+    function ReferPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.BackgroundImages = __WEBPACK_IMPORTED_MODULE_2__app_imageService__["a" /* default */];
+    }
+    ReferPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ReferPage');
+    };
+    ReferPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-refer',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\refer\refer.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\refer\refer.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], ReferPage);
+    return ReferPage;
+}());
+
+//# sourceMappingURL=refer.js.map
+
+/***/ }),
+
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1019,7 +982,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleArtistPageModule", function() { return SingleArtistPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_artist__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_artist__ = __webpack_require__(138);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1046,6 +1009,44 @@ var SingleArtistPageModule = (function () {
 }());
 
 //# sourceMappingURL=single-artist.module.js.map
+
+/***/ }),
+
+/***/ 261:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleCategoryPageModule", function() { return SingleCategoryPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__single_category__ = __webpack_require__(251);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SingleCategoryPageModule = (function () {
+    function SingleCategoryPageModule() {
+    }
+    SingleCategoryPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__single_category__["a" /* SingleCategoryPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__single_category__["a" /* SingleCategoryPage */]),
+            ],
+        })
+    ], SingleCategoryPageModule);
+    return SingleCategoryPageModule;
+}());
+
+//# sourceMappingURL=single-category.module.js.map
 
 /***/ }),
 
@@ -1292,7 +1293,7 @@ var RegisterPage = (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_5__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/register/register.html"*/'<!-- -->\n<ion-content class="auth-page">\n  <div class="login-content">\n\n    <!-- Logo -->\n    <div padding text-center>\n      <div class="logo"></div>\n    </div>\n\n    <!-- Login form -->\n    <form class="list-form">\n      <ion-item>\n        <ion-input type="text" [(ngModel)]="username" name="username" placeholder="Name"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Email ID"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-input type="tel" [(ngModel)]="phonenumber" name="phonenumber" placeholder="Phone Number"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>Gender</ion-label>\n        <ion-select [(ngModel)]="gender" name="gender">\n          <ion-option value="male">Male</ion-option>\n          <ion-option value="female">Female</ion-option>\n        </ion-select>\n      </ion-item>\n\n    </form>\n\n    <div margin-top>\n      <button ion-button block color="dark" tappable (click)="register()">\n        SIGN UP\n      </button>\n    </div>\n\n    <!-- Other links -->\n    <div text-center margin-top>\n      <span ion-text color="primary" tappable (click)="login()">I have an account</span>\n    </div>\n\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/register/register.html"*/
+            selector: 'page-register',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\register\register.html"*/'<!-- -->\n\n<ion-content class="auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding text-center>\n\n      <div class="logo"></div>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form">\n\n      <ion-item>\n\n        <ion-input type="text" [(ngModel)]="username" name="username" placeholder="Name"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Email ID"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="tel" [(ngModel)]="phonenumber" name="phonenumber" placeholder="Phone Number"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label>Gender</ion-label>\n\n        <ion-select [(ngModel)]="gender" name="gender">\n\n          <ion-option value="male">Male</ion-option>\n\n          <ion-option value="female">Female</ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n\n\n    </form>\n\n\n\n    <div margin-top>\n\n      <button ion-button block color="dark" tappable (click)="register()">\n\n        SIGN UP\n\n      </button>\n\n    </div>\n\n\n\n    <!-- Other links -->\n\n    <div text-center margin-top>\n\n      <span ion-text color="primary" tappable (click)="login()">I have an account</span>\n\n    </div>\n\n\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\register\register.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_7__angular_fire_firestore__["a" /* AngularFirestore */],
@@ -1338,7 +1339,7 @@ var NotificationsPage = (function () {
     };
     NotificationsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-notifications',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/notifications/notifications.html"*/'<!-- -->\n<ion-header>\n    <ion-navbar color="primary" class="navbar" style="text-align: center">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n    </ion-navbar>\n  </ion-header>\n  <ion-content>\n  <ion-list class="no-margin">\n  <ion-list-header class="no-margin">\n  	<ion-icon name="notifications" color="primary"></ion-icon>\n  	<span ion-text color="primary" class="bold">Notifications</span>\n  </ion-list-header>\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n  	<ion-icon name="mail"></ion-icon>\n  	New booking success!\n  </button>\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n  	<ion-icon name="mail"></ion-icon>\n  	Activity rescheduled\n  </button>\n  <button ion-item class="text-1x" tappable (click)="close()">\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n  	<span ion-text color="secondary">Activity rescheduled</span>\n  </button>\n  <button ion-item class="text-1x" tappable (click)="close()">\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n  	<span ion-text color="secondary">Activity rescheduled</span>\n  </button>\n</ion-list>\n</ion-content>'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/notifications/notifications.html"*/
+            selector: 'page-notifications',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\notifications\notifications.html"*/'<!-- -->\n\n<ion-header>\n\n    <ion-navbar color="primary" class="navbar" style="text-align: center">\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n    </ion-navbar>\n\n  </ion-header>\n\n  <ion-content>\n\n  <ion-list class="no-margin">\n\n  <ion-list-header class="no-margin">\n\n  	<ion-icon name="notifications" color="primary"></ion-icon>\n\n  	<span ion-text color="primary" class="bold">Notifications</span>\n\n  </ion-list-header>\n\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail"></ion-icon>\n\n  	New booking success!\n\n  </button>\n\n  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail"></ion-icon>\n\n  	Activity rescheduled\n\n  </button>\n\n  <button ion-item class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n\n  	<span ion-text color="secondary">Activity rescheduled</span>\n\n  </button>\n\n  <button ion-item class="text-1x" tappable (click)="close()">\n\n  	<ion-icon name="mail-open" color="secondary"></ion-icon>\n\n  	<span ion-text color="secondary">Activity rescheduled</span>\n\n  </button>\n\n</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\notifications\notifications.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
     ], NotificationsPage);
@@ -1394,12 +1395,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_login_login__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_notifications_notifications__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_register_register__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_categories_categories_module__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feedback_feedback_module__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_helpdesk_helpdesk_module__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_refer_refer_module__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_single_artist_single_artist_module__ = __webpack_require__(261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_single_category_single_category_module__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_categories_categories_module__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feedback_feedback_module__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_helpdesk_helpdesk_module__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_refer_refer_module__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_single_artist_single_artist_module__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_single_category_single_category_module__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_users_users_module__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_user_profile_user_profile_module__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_bookings_bookings_module__ = __webpack_require__(248);
@@ -1471,12 +1472,12 @@ var AppModule = (function () {
                 }, {
                     links: [
                         { loadChildren: '../pages/bookings/bookings.module#BookingsPageModule', name: 'BookingsPage', segment: 'bookings', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/feedback/feedback.module#FeedbackPageModule', name: 'FeedbackPage', segment: 'feedback', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/helpdesk/helpdesk.module#HelpdeskPageModule', name: 'HelpdeskPage', segment: 'helpdesk', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/refer/refer.module#ReferPageModule', name: 'ReferPage', segment: 'refer', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/single-category/single-category.module#SingleCategoryPageModule', name: 'SingleCategoryPage', segment: 'single-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categories/categories.module#CategoriesPageModule', name: 'CategoriesPage', segment: 'categories', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/helpdesk/helpdesk.module#HelpdeskPageModule', name: 'HelpdeskPage', segment: 'helpdesk', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/feedback/feedback.module#FeedbackPageModule', name: 'FeedbackPage', segment: 'feedback', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/refer/refer.module#ReferPageModule', name: 'ReferPage', segment: 'refer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/single-artist/single-artist.module#SingleArtistPageModule', name: 'SingleArtistPage', segment: 'single-artist', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/single-category/single-category.module#SingleCategoryPageModule', name: 'SingleCategoryPage', segment: 'single-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/users/users.module#UsersPageModule', name: 'UsersPage', segment: 'users', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-profile/user-profile.module#UserProfilePageModule', name: 'UserProfilePage', segment: 'user-profile', priority: 'low', defaultHistory: [] }
                     ]
@@ -1580,7 +1581,7 @@ var UsersPage = (function () {
     };
     UsersPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-users',template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/users/users.html"*/'<!-- -->\n<ion-header>\n  <ion-navbar color="primary" style="background-image: \'{{BackgroundImages.categoryBG}}\'">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="animated fadeIn common-bg">\n  <ion-searchbar [(ngModel)]="searchArtist" (ionChange)="setAtrist()" placeholder="Search Category"></ion-searchbar>\n  <ion-list>\n      <div class="ArtistList"  *ngFor ="let user of users" id="user-{{user.id}}">\n        <ion-avatar><img src="{{user.img}}"></ion-avatar>\n        <ion-label><h1 innerHTML="{{user.name}}"></h1><p innerHTML="{{user.category}}"></p></ion-label>\n      </div>\n    </ion-list>\n</ion-content>\n\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/pages/users/users.html"*/,
+            selector: 'page-users',template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\pages\users\users.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary" style="background-image: \'{{BackgroundImages.categoryBG}}\'">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="animated fadeIn common-bg">\n\n  <ion-searchbar [(ngModel)]="searchArtist" (ionChange)="setAtrist()" placeholder="Search Category"></ion-searchbar>\n\n  <ion-list>\n\n      <div class="ArtistList"  *ngFor ="let user of users" id="user-{{user.id}}">\n\n        <ion-avatar><img src="{{user.img}}"></ion-avatar>\n\n        <ion-label><h1 innerHTML="{{user.name}}"></h1><p innerHTML="{{user.category}}"></p></ion-label>\n\n      </div>\n\n    </ion-list>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\pages\users\users.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__app_userService__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]])
     ], UsersPage);
@@ -1720,7 +1721,6 @@ var TripService = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operators__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1730,42 +1730,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
 
 
 var UserService = (function () {
@@ -1775,34 +1739,9 @@ var UserService = (function () {
     UserService.prototype.setUser = function (user) {
         this.user = user;
     };
-    UserService.prototype.updatePassword = function (newpassword) {
-        return this.afAuth.auth.currentUser.updatePassword(newpassword);
-    };
-    UserService.prototype.isAuthenticated = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var user;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (this.user)
-                            return [2 /*return*/, true];
-                        return [4 /*yield*/, this.afAuth.authState.pipe(Object(__WEBPACK_IMPORTED_MODULE_2_rxjs_operators__["first"])()).toPromise()];
-                    case 1:
-                        user = _a.sent();
-                        if (user) {
-                            this.setUser({
-                                uid: user.uid
-                            });
-                            return [2 /*return*/, true];
-                        }
-                        return [2 /*return*/, false];
-                }
-            });
-        });
-    };
     UserService.prototype.getUID = function () {
-        // return this.user.uid
-        return 'QFmmcWO6T1P9a8kVZyDtKHWdLaI3';
+        return this.user.uid;
+        //	return 'QFmmcWO6T1P9a8kVZyDtKHWdLaI3';
     };
     UserService.prototype.getusername = function () {
         if (this.afAuth.auth.currentUser.displayName == '') {
@@ -1914,7 +1853,7 @@ var TRIPS = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1981,10 +1920,10 @@ var WeatherProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__ = __webpack_require__(306);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_categories_categories__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_categories_categories__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_notifications_notifications__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_refer_refer__ = __webpack_require__(254);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_feedback_feedback__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_refer_refer__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_feedback_feedback__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_bookings_bookings__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_helpdesk_helpdesk__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__imageService__ = __webpack_require__(24);
@@ -2070,7 +2009,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/app/app.html"*/'<ion-menu side="left" id="authenticated" [content]="content">\n  <ion-header>\n    <ion-toolbar class="user-profile">\n\n      <ion-grid>\n        <ion-row>\n              <div class="user-avatar" menuClose (click)="openProfile()" >\n                <img src="{{backgroundImages.avatar}}">\n              </div>\n            <h2 ion-text class="no-margin bold text-white" [innerHTML]="username"></h2>\n        </ion-row>\n      </ion-grid>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content color="primary" class="SideToggle">\n    <ion-list class="user-list">\n      <button ion-item menuClose class="text-1x" *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n        <ion-icon name="{{menuItem.icon}}" color="#fff"></ion-icon>\n        <span ion-text color="primary">{{menuItem.title}}</span>\n      </button>\n      <button ion-item menuClose class="text-1x"(click)="logout()">\n          <ion-icon name="log-out" color="#fff"></ion-icon>\n        <span ion-text color="primary">Log Out</span>\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/Users/voolasoftwaresolutions/Documents/GitHub/baza/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\admin\Documents\GitHub\baza\src\app\app.html"*/'<ion-menu side="left" id="authenticated" [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar class="user-profile">\n\n\n\n      <ion-grid>\n\n        <ion-row>\n\n              <div class="user-avatar" menuClose (click)="openProfile()" >\n\n                <img src="{{backgroundImages.avatar}}">\n\n              </div>\n\n            <h2 ion-text class="no-margin bold text-white" [innerHTML]="username"></h2>\n\n        </ion-row>\n\n      </ion-grid>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content color="primary" class="SideToggle">\n\n    <ion-list class="user-list">\n\n      <button ion-item menuClose class="text-1x" *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon name="{{menuItem.icon}}" color="#fff"></ion-icon>\n\n        <span ion-text color="primary">{{menuItem.title}}</span>\n\n      </button>\n\n      <button ion-item menuClose class="text-1x"(click)="logout()">\n\n          <ion-icon name="log-out" color="#fff"></ion-icon>\n\n        <span ion-text color="primary">Log Out</span>\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\admin\Documents\GitHub\baza\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__userService__["a" /* UserService */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* Platform */],

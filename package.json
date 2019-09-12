@@ -34,8 +34,6 @@
     "angularfire2": "^5.2.1",
     "com.razorpay.cordova": "1.4.6",
     "cordova": "^9.0.0",
-    "cordova-android": "8.0.0",
-    "cordova-browser": "^6.0.0",
     "cordova-ios": "^4.5.4",
     "cordova-plugin-console": "^1.1.0",
     "cordova-plugin-device": "^1.1.6",
@@ -77,7 +75,7 @@
       "cordova-sqlite-storage": {},
       "cordova-plugin-firebase-authentication": {},
       "com.razorpay.cordova": {}
-},
+    },
     "platforms": [
       "ios"
     ]

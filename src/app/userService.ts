@@ -20,30 +20,9 @@ export class UserService {
 		this.user = user
 	}
 
-
-	updatePassword(newpassword: string) {
-		return this.afAuth.auth.currentUser.updatePassword(newpassword)
-	}
-
-
-	async isAuthenticated() {
-		if(this.user) return true
-
-		const user = await this.afAuth.authState.pipe(first()).toPromise()
-
-		if(user) {
-			this.setUser({
-				uid: user.uid
-			})
-
-			return true
-		}
-		return false
-	}
-
 	getUID(): string {
-		// return this.user.uid
-		return 'QFmmcWO6T1P9a8kVZyDtKHWdLaI3';
+		return this.user.uid
+	//	return 'QFmmcWO6T1P9a8kVZyDtKHWdLaI3';
 	}
 	getusername() {
 		if (this.afAuth.auth.currentUser.displayName == ''){
