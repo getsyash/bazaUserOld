@@ -1,3 +1,4 @@
+import { AlertController } from 'ionic-angular';
 import { UserService } from './../../app/userService';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -24,34 +25,39 @@ export class UserProfilePage {
   profile = {} as Profile
 
   BackgroundImages = images.default;
-  UserData : any;
+
   sub
   uid
+  profileData:any
+
 
   constructor(
     private afAuth: AngularFireAuth,
     public navCtrl: NavController, 
     public navParams: NavParams,
-    private afS : AngularFirestore
+    private afS : AngularFirestore,
+    public alert : AlertController
     ) {
-      
-    this.afAuth.authState.subscribe( auth=>{
-      this.uid = auth.uid
-    })
+
+    this.uid = this.afAuth.auth.currentUser.uid
     console.log(this.uid)
+    this.afS.doc(`users/${this.uid}`).valueChanges().subscribe(res =>{
+      console.log(res)
+      this.profileData = res
+    })
   }
 
   ionViewDidLoad(){
 
-    console.log(this.UserData)
-
   }
 
   updateProfile(){
-    this.afAuth.authState.subscribe( auth=>{
-      this.uid = auth.uid
+
+    this.afS.doc(`users/${this.uid}`).set(this.profileData).then( ()=>{
+      this.alert.create({subTitle : 'Profile Updated Successfully', buttons : ['Ok']}).present()
     })
-    console.log(this.uid)
+
+
   }
 
 }

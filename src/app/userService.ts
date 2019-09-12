@@ -4,11 +4,7 @@ import { first } from 'rxjs/operators'
 import { auth } from 'firebase/app'
 
 interface user {
-	username: string,
-	uid: string,
-	email : string,
-	phone : string,
-	gender : string
+	uid: string
 
 }
 
@@ -24,21 +20,11 @@ export class UserService {
 		this.user = user
 	}
 
-	getUsername(): string {
-		return this.user.username
-	}
-
-	reAuth(username: string, password: string) {
-		return this.afAuth.auth.currentUser.reauthenticateWithCredential(auth.EmailAuthProvider.credential(username + '@codedamn.com', password))
-	}
 
 	updatePassword(newpassword: string) {
 		return this.afAuth.auth.currentUser.updatePassword(newpassword)
 	}
 
-	updateEmail(newemail: string) {
-		return this.afAuth.auth.currentUser.updateEmail(newemail + '@codedamn.com')
-	}
 
 	async isAuthenticated() {
 		if(this.user) return true
@@ -47,11 +33,7 @@ export class UserService {
 
 		if(user) {
 			this.setUser({
-				username: user.displayName,
-				uid: user.uid,
-				email : user.email,
-				phone : user.phoneNumber,
-				gender : user.displayName
+				uid: user.uid
 			})
 
 			return true
@@ -60,6 +42,14 @@ export class UserService {
 	}
 
 	getUID(): string {
-		return this.user.uid
+		// return this.user.uid
+		return 'QFmmcWO6T1P9a8kVZyDtKHWdLaI3';
+	}
+	getusername() {
+		if (this.afAuth.auth.currentUser.displayName == ''){
+			return 'Test User'
+		}else {
+			return this.afAuth.auth.currentUser.displayName
+		}
 	}
 }

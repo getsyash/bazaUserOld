@@ -7,10 +7,20 @@
     "files": {}
   },
   "installed_plugins": {
+    "com.razorpay.cordova": {
+      "PACKAGE_NAME": "com.baza.app"
+    },
     "cordova-plugin-console": {
       "PACKAGE_NAME": "com.baza.app"
     },
     "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.baza.app"
+    },
+    "cordova-plugin-firebase-authentication": {
+      "FIREBASE_AUTH_VERSION": "18.0.+",
+      "PACKAGE_NAME": "com.baza.app"
+    },
+    "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.baza.app"
     },
     "cordova-plugin-statusbar": {
@@ -18,13 +28,14 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.baza.app"
-    },
-    "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.baza.app"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.baza.app"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.baza.app"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.baza.app"
+    }
+  }
 }

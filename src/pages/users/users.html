@@ -1,14 +1,15 @@
 <!-- -->
 <ion-header>
-  <ion-navbar color="primary" style="background-image: '{{backgroundImages.categoryBG}}'">
+  <ion-navbar color="primary" style="background-image: '{{BackgroundImages.categoryBG}}'">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <img src="{{backgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">
+    <img src="{{BackgroundImages.logo}}" style="width: 30%;position: relative;right: 10%;">
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="animated fadeIn common-bg">
+  <ion-searchbar [(ngModel)]="searchArtist" (ionChange)="setAtrist()" placeholder="Search Category"></ion-searchbar>
   <ion-list>
       <div class="ArtistList"  *ngFor ="let user of users" id="user-{{user.id}}">
         <ion-avatar><img src="{{user.img}}"></ion-avatar>
@@ -16,3 +17,4 @@
       </div>
     </ion-list>
 </ion-content>
+

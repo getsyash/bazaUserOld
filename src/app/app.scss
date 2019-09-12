@@ -3,7 +3,10 @@
 // --------------------------------------------------
 
 // global styles
-.ArtistInfo {
+.user-list ion-icon {
+  color: #fff;
+  padding-right: 0.5em;
+}.ArtistInfo {
   background: #7e7e7e;
   padding: 3%;
   color: #fff;
@@ -55,9 +58,6 @@
   border-radius: 15px;
 }.button-md-dark:hover {
   background-color: #dc9a01 !important;
-}div#Category-Singers img {
-  height: 55vh;
-  object-fit: cover;
 }
 .secondary-bg {
   background-color: color($colors, secondary) !important;

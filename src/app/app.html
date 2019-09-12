@@ -7,8 +7,7 @@
               <div class="user-avatar" menuClose (click)="openProfile()" >
                 <img src="{{backgroundImages.avatar}}">
               </div>
-            <h2 ion-text class="no-margin bold text-white">            </h2>
-            <p (click)="logout()" menuClose>log out</p>
+            <h2 ion-text class="no-margin bold text-white" [innerHTML]="username"></h2>
         </ion-row>
       </ion-grid>
     </ion-toolbar>
@@ -17,7 +16,12 @@
   <ion-content color="primary" class="SideToggle">
     <ion-list class="user-list">
       <button ion-item menuClose class="text-1x" *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">
+        <ion-icon name="{{menuItem.icon}}" color="#fff"></ion-icon>
         <span ion-text color="primary">{{menuItem.title}}</span>
+      </button>
+      <button ion-item menuClose class="text-1x"(click)="logout()">
+          <ion-icon name="log-out" color="#fff"></ion-icon>
+        <span ion-text color="primary">Log Out</span>
       </button>
     </ion-list>
   </ion-content>

@@ -3,10 +3,20 @@ page-categories {
     .ListItem ion-avatar {
         position: relative;
     }.ListItem {
-        margin-bottom: 15px;
+        display: inline-block;
+        width: 10vh !important;
+        margin-right: 1em;
     }.toolbar-background {
         background-image: url(../../assets/img/Category_bg.png) !important;
         background-size: contain !important;
+    }.ListItem img {
+        border-radius: 100%;
+        height: 10vh;
+        width: 10vh !important;
+        object-fit: cover;
+        object-position: center;
+    }p {
+        color: #000 !important;
     }
 
 }
